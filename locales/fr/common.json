@@ -102,6 +102,7 @@
   "qrCodeGenerator": "Générateur de QR Code",
   "qrCodeGeneratorTitle": "Générateur de QR Code",
   "qrCodeWillAppear": "Le QR code apparaîtra ici",
+  "qrGeneratedFor" : "Code QR généré avec succès !",
   "exportAsPngBtn": "Exporter en PNG",
   "exportAsJpegBtn": "Exporter en JPEG",
   "emptyInputAlert": "Veuillez entrer du texte pour générer un QR code !",

@@ -102,6 +102,7 @@
   "qrCodeGenerator": "QR कोड जनरेटर",
   "qrCodeGeneratorTitle": "QR कोड जनरेटर",
   "qrCodeWillAppear": "QR कोड यहाँ दिखाई देगा",
+  "qrGeneratedFor" : "QR कोड सफलतापूर्वक जनरेट किया गया!",
   "exportAsPngBtn": "PNG के रूप में निर्यात करें",
   "exportAsJpegBtn": "JPEG के रूप में निर्यात करें",
   "emptyInputAlert": "QR कोड जनरेट करने के लिए कृपया कुछ पाठ दर्ज करें!",

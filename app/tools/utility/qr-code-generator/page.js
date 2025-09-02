@@ -29,7 +29,7 @@ export default function QrCodeGenerator() {
   };
 
   return (
-    <div className="mt-2 md:mt-8 px-4 md:px-12 lg:px-20 xl:px-32 py-6 flex flex-col items-center text-center">
+    <main className="mt-2 md:mt-8 px-4 md:px-12 lg:px-20 xl:px-32 py-6 flex flex-col items-center text-center">
       {/* Accessible Title */}
       <h1
         className="text-2xl md:text-4xl font-bold uppercase mb-6 flex items-center gap-2"
@@ -52,10 +52,11 @@ export default function QrCodeGenerator() {
         className="border border-gray-400 px-4 py-3 rounded-lg w-full max-w-md outline-primary focus:ring-2 focus:ring-primary mb-6"
         aria-describedby="qr-helper-text"
       />
-      <p id="qr-helper-text" className="text-sm text-gray-500 mb-4">
-        {t("qrCodeWillAppear")}
-      </p>
 
+    <label htmlFor="qrCode">
+      {text && t("qrGeneratedFor" )}
+    </label>
+    
       {/* QR Preview */}
       <div
         ref={qrRef}
@@ -64,7 +65,7 @@ export default function QrCodeGenerator() {
         aria-label={text ? t("qrGeneratedFor", { text }) : t("qrCodeWillAppear")}
       >
         {text ? (
-          <QRCode value={text} size={220} aria-hidden="true" />
+          <QRCode value={text} size={250} aria-hidden="true" />
         ) : (
           <p className="text-gray-400 text-sm">{t("qrCodeWillAppear")}</p>
         )}
@@ -89,6 +90,6 @@ export default function QrCodeGenerator() {
           {t("exportAsJpegBtn")}
         </button>
       </div>
-    </div>
+    </main>
   );
 }
