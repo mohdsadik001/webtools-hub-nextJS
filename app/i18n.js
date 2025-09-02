@@ -18,6 +18,11 @@ import navbarUr from "../locales/ur/navbar.json";
 import toolsUr from "../locales/ur/tools.json";
 import heroUr from "../locales/ur/hero.json";
 
+import commonFr from "../locales/fr/common.json";
+import navbarFr from "../locales/fr/navbar.json";
+import toolsFr from "../locales/fr/tools.json";
+import heroFr from "../locales/fr/hero.json";
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -28,6 +33,7 @@ i18n
       en: { common: commonEn, navbar: navbarEn, tools: toolsEn, hero: heroEn },
       hi: { common: commonHi, navbar: navbarHi, tools: toolsHi, hero: heroHi },
       ur: { common: commonUr, navbar: navbarUr, tools: toolsUr, hero: heroUr },
+      fr: { common: commonFr, navbar: navbarFr, tools: toolsFr, hero: heroFr },
     },
     defaultNS: "common",
     interpolation: {

@@ -14,6 +14,11 @@ const LanguageSelector = () => {
       flag: "🇮🇳",
     },
     {
+      name: "french",
+      lang_code: "fr",
+      flag: "🇫🇷",
+    },
+    {
       name: "اردو",
       lang_code: "ur",
       flag: "🇵🇰",

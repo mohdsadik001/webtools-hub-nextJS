@@ -1,0 +1,62 @@
+{
+  "text-case-converter": {
+    "name": "Convertisseur de casse de texte",
+    "description": "Convertir le texte en majuscules, minuscules ou casse de phrase."
+  },
+  "lorem-ipsum-generator": {
+    "name": "Générateur Lorem Ipsum",
+    "description": "Génère du texte aléatoire en lorem ipsum."
+  },
+  "text-counter": {
+    "name": "Compteur de texte",
+    "description": "Comptez les caractères, les mots et les phrases dans votre texte."
+  },
+  "multiple-whitespace-remover": {
+    "name": "Suppresseur d’espaces multiples",
+    "description": "Supprime les espaces multiples d’un texte."
+  },
+  "text-diff-checker": {
+    "name": "Comparateur de texte",
+    "description": "Comparez deux textes et mettez en évidence les différences."
+  },
+  "base64-encoder": {
+    "name": "Encodeur Base64",
+    "description": "Encodez du texte ou des fichiers au format Base64."
+  },
+  "currency-converter": {
+    "name": "Convertisseur de devises",
+    "description": "Convertissez une devise en une autre en temps réel."
+  },
+  "qr-code-generator": {
+    "name": "Générateur de QR Code",
+    "description": "Créez des QR codes à partir de texte ou d’URL."
+  },
+  "unit-converter": {
+    "name": "Convertisseur d’unités",
+    "description": "Convertissez des unités comme la longueur, le poids et la température."
+  },
+  "json-validator": {
+    "name": "Validateur JSON",
+    "description": "Vérifiez si votre JSON est valide et correctement formaté."
+  },
+  "password-generator": {
+    "name": "Générateur de mots de passe",
+    "description": "Générez des mots de passe forts et sécurisés."
+  },
+  "url-encoder-decoder": {
+    "name": "Encodeur/Décodeur d’URL",
+    "description": "Encodez ou décodez des URL pour une utilisation sur le web."
+  },
+  "timestamp-converter": {
+    "name": "Convertisseur d’horodatage",
+    "description": "Convertissez des horodatages Unix en dates lisibles."
+  },
+  "gradient-generator": {
+    "name": "Générateur de dégradés",
+    "description": "Créez des dégradés CSS avec des couleurs personnalisées."
+  },
+  "color-picker": {
+    "name": "Sélecteur de couleurs",
+    "description": "Sélectionnez, choisissez et copiez des codes couleurs."
+  }
+}

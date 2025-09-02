@@ -1,0 +1,17 @@
+{
+  "title": {
+    "part1": "Tous",
+    "highlight": "Outils en ligne",
+    "part2": "dans une seule boîte"
+  },
+  "subtitle": "Plus besoin de mettre vos outils préférés en favoris séparément",
+  "description": "WebTools Hub est une boîte à outils tout-en-un gratuite conçue pour vous faciliter la vie en évitant le désordre des favoris.",
+  "exploreButton": "Explorer les outils",
+  "categories": {
+    "Text Tools": "Outils de texte",
+    "Conversion Tools": "Outils de conversion",
+    "Color": "Couleur",
+    "Web": "Web",
+    "Generators": "Générateurs"
+  }
+}
