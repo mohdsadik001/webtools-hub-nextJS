@@ -334,6 +334,14 @@ export const allTools = [
     image: "🌈",
     description: "Create CSS gradients with custom colors.",
   },
+  {
+    name: "Color Picker",
+    slug: "color-picker",
+    category: "Color",
+    image: "🎨",
+    description: "Select and pick the color code.",
+  },
+
 ];
 
 

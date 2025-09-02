@@ -54,5 +54,9 @@
   "gradient-generator": {
     "name": "Gradient Generator",
     "description": "Create CSS gradients with custom colors."
+  },
+  "color-picker": {
+    "name": "Color Picker",
+    "description": "Select, Pick and copy Colors Code."
   }
 }

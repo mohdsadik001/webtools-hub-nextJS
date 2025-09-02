@@ -164,7 +164,7 @@
 
 
   "gradientGenerator": "Gradient Generator",
-  "gradientGeneratorTitle": "🎨 Gradient Generator",
+  "gradientGeneratorTitle": "🌈 Gradient Generator",
   "directionToRight": "To Right",
   "directionToLeft": "To Left",
   "directionToBottom": "To Bottom",
@@ -180,6 +180,8 @@
   "cssCodeLabel": "CSS Gradient code",
   "copyCssBtn": "Copy CSS",
   "exportPngBtn": "Export PNG",
-  "exportFailedAlert": "Failed to export image."
+  "exportFailedAlert": "Failed to export image.",
+
+  "colorPicker": "Color Picker"
 
 }
