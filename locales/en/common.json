@@ -1,0 +1,185 @@
+{
+  "appName": "WebToolsHub",
+  "welcome": "Welcome to WebToolsHub",
+  "searchPlaceholder": "Search for a tool...",
+  "noResults": "No tools found",
+  "allTools": "Explore Tools",
+  "contact": "Contact Us",
+  "categories": "Tools Categories",
+  "allToolsHead": "All Tools",
+  "inputAreaLabel" : "Input Text",
+
+
+  "categoriesTitle": "Tools Categories",
+  "textToolsLabel": "Text Tools",
+  "colorToolsLabel": "Color Tools",
+  "developerToolsLabel": "Developer Tools",
+  "financeToolsLabel": "Finance Tools",
+  "utilityToolsLabel": "Utility Tools",
+
+
+  "textCaseConverter": "Text Case Converter",
+  "caseConverterTitle": "Case Converter",
+  "sentenceCaseBtn": "Sentence case",
+  "upperCaseBtn": "UPPER CASE",
+  "lowerCaseBtn": "lower case",
+  "titleCaseBtn": "Title Case",
+  "mixedCaseBtn": "MiXEd cAsE",
+  "inverseCaseBtn": "iNvErSe cAsE",
+  "textareaPlaceholder": "Enter your text...",
+  "charactersCount": "characters",
+  "resetBtn": "Reset",
+  "copyTextBtn": "Copy Text",
+  "copiedAlert": "Copied!",
+
+
+  "textCounter": "Text Counter",
+  "characterSingular": "Character",
+  "characterPlural": "Characters",
+  "wordSingular": "Word",
+  "wordPlural": "Words",
+  "sentenceSingular": "Sentence",
+  "sentencePlural": "Sentences",
+
+
+  "loremIpsum": "Lorem Ipsum Generator",
+  "paragraphCountPlaceholder": "Paragraph Count",
+  "sentenceCountPlaceholder": "Sentence Count Per Para.",
+  "wordCountPlaceholder": "Word Count Per Sentence.",
+  "generateBtn": "Generate",
+  "loremIpsumTextLabel": "Lorem ipsum text",
+  
+
+  "multipleWhiteSpaceRemover": "Multiple White Space Remover",
+  "removeMultipleSpacesBtn": "Remove Multiple Spaces",
+
+
+  "textDiffChecker": "Text Diff Checker",
+  "textDiffCheckerTitle": "Enhanced Text Difference Checker",
+  "originalTextLabel": "Original Text",
+  "modifiedTextLabel": "Modified Text",
+  "compareBtn": "Compare Text",
+  "copyDiffBtn": "Copy Diff",
+  "exportDiffBtn": "Export Diff",
+  "wordLevelDiffOption": "Word-level Diff",
+  "charLevelDiffOption": "Character-level Diff",
+  "originalTextPlaceholder": "Enter original text...",
+  "modifiedTextPlaceholder": "Enter modified text...",
+  "diffCopiedAlert": "Diff copied to clipboard!",
+
+  
+  "base64ToolkitTitle": "🧬 Base64 Toolkit",
+  "encodeTextTab": "Encode Text",
+  "decodeTextTab": "Decode Text",
+  
+  "base64Encoder": "Base64 Encoder",
+  "base64EncoderTitle": "🧬 Base64 Encoder",
+  "inputPlaceholder": "Enter text to encode...",
+  "copyBtn": "Copy",
+  "clearBtn": "Clear",
+  "downloadBtn": "Download",
+  "encodedOutputLabel": "Encoded Base64 Output:",
+  "outputPlaceholder": "Output will appear here...",
+  "encodingFailed": "Encoding failed. Make sure the input is valid UTF-8.",
+  
+  "base64DecoderTitle": "🧬 Base64 Decoder",
+  "decodedOutputLabel": "Decoded Output:",
+  "invalidBase64Alert": "❌ Invalid Base64 input.",
+  
+  "fileToBase64Tab": "File to Base64",
+  "fileLabel": "📁 File:",
+  "copyBase64Btn": "📋 Copy Base64",
+
+
+  "fileToBase64Title" : "File to Base64",
+  "fileDecoderTab": "File Decoder",
+  "fileDecoderTitle": "📁 Upload Base64 File to Decode",  
+
+  
+  "currencyConverter": "Currency Converter",
+  "currencyConverterTitle": "💸 Currency Converter",
+  "amountLabel": "Amount",
+  "amountPlaceholder": "Amount",
+  "fromLabel": "From:",
+  "toLabel": "To:",
+  "convertBtn": "Convert",
+  "convertedAmountLabel": "Converted Amount",
+  "conversionRateLabel": "Conversion Rate",
+  "conversionFailedAlert": "Conversion failed.",
+  "invalidAmountAlert": "Enter valid amount",
+
+
+  "qrCodeGenerator": "QR Code Generator",
+  "qrCodeGeneratorTitle": "QR Code Generator",
+  "qrCodeWillAppear": "QR code will appear here",
+  "exportAsPngBtn": "Export as PNG",
+  "exportAsJpegBtn": "Export as JPEG",
+  "emptyInputAlert": "Please enter some text to generate QR code!",
+  
+
+  "unitConverter": "Unit Converter",
+
+
+  "jsonValidator": "JSON Validator",
+  "jsonValidatorTitle": "🧾 JSON Validator & Formatter",
+  "invalidJsonAlert": "❌ Invalid JSON:",
+  "formattedJsonLabel": "✅ Formatted JSON:",
+  "exportJsonBtn": "Export .json",
+  "exportTxtBtn": "Export .txt",
+  "clearAllBtn": "Clear All",
+
+
+  "passwordGenerator": "Password Generator",
+  "passwordGeneratorTitle": "🔐 Password Generator",
+  "passwordLengthLabel": "Password Length",
+  "includeUppercaseLabel": "Include Uppercase",
+  "includeLowercaseLabel": "Include Lowercase",
+  "includeNumbersLabel": "Include Numbers",
+  "includeSymbolsLabel": "Include Symbols",
+  "generatePasswordBtn": "Generate Password",
+  "strengthLabel": "Strength",
+  "strengthWeak": "Weak",
+  "strengthMedium": "Medium",
+  "strengthStrong": "Strong",
+
+
+
+  "urlEncoderDecoder": "URL Encoder Decoder",
+  "urlEncoderDecoderTitle": "🔗 URL Encoder / Decoder",
+  "encodeBtn": "Encode",
+  "decodeBtn": "Decode",
+  "encodeInputPlaceholder": "Enter URL to encode...",
+  "decodeInputPlaceholder": "Enter encoded URL to decode...",
+  "resultLabel": "Result:",
+  "copyResultBtn": "Copy Result",
+  "invalidInputAlert": "Invalid input for decoding!",
+
+
+  "timeStampConvert": "Time Stamp Converter",
+  "timestampConverterTitle": "⏱️ Timestamp Converter",
+  "unixTimestampLabel": "🔢 UNIX Timestamp",
+  "humanReadableDateLabel": "📅 Human-Readable Date",
+  "useCurrentTimeBtn": "Use Current Time",
+  "exportBtn": "Export",
+
+
+  "gradientGenerator": "Gradient Generator",
+  "gradientGeneratorTitle": "🎨 Gradient Generator",
+  "directionToRight": "To Right",
+  "directionToLeft": "To Left",
+  "directionToBottom": "To Bottom",
+  "directionToTop": "To Top",
+  "direction45deg": "45deg",
+  "direction135deg": "135deg",
+  "direction225deg": "225deg",
+  "direction315deg": "315deg",
+  "directionRadial": "Radial",
+  "addColorBtn": "Add Color",
+  "removeColorBtn": "Remove color",
+  "gradientPreviewLabel": "Gradient preview",
+  "cssCodeLabel": "CSS Gradient code",
+  "copyCssBtn": "Copy CSS",
+  "exportPngBtn": "Export PNG",
+  "exportFailedAlert": "Failed to export image."
+
+}

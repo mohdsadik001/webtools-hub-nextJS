@@ -1,0 +1,58 @@
+{
+  "text-case-converter": {
+    "name": "ٹیکسٹ کیس کنورٹر",
+    "description": "ٹیکسٹ کو اپر کیس، لوئر کیس، یا سینٹینس کیس میں تبدیل کریں۔"
+  },
+  "lorem-ipsum-generator": {
+    "name": "لوریم اپسوم جنریٹر",
+    "description": "بے ترتیب لوڑیم اپسوم ٹیکسٹ تیار کرتا ہے۔"
+  },
+  "text-counter": {
+    "name": "ٹیکسٹ کاؤنٹر",
+    "description": "اپنے ٹیکسٹ میں حروف، الفاظ اور جملے گنیں۔"
+  },
+  "multiple-whitespace-remover": {
+    "name": "اضافی اسپیس ہٹائیں",
+    "description": "ٹیکسٹ سے اضافی اسپیس ہٹا دیں۔"
+  },
+  "text-diff-checker": {
+    "name": "ٹیکسٹ ڈِف چیکر",
+    "description": "دو ٹیکسٹ کی موازنہ کریں اور فرق کو ہائی لائٹ کریں۔"
+  },
+  "base64-encoder": {
+    "name": "Base64 اینکوڈر",
+    "description": "ٹیکسٹ یا فائلز کو Base64 فارمیٹ میں اینکوڈ کریں۔"
+  },
+  "currency-converter": {
+    "name": "کرنسی کنورٹر",
+    "description": "ایک کرنسی کو دوسری میں حقیقی وقت میں تبدیل کریں۔"
+  },
+  "qr-code-generator": {
+    "name": "QR کوڈ جنریٹر",
+    "description": "ٹیکسٹ یا URL سے QR کوڈ بنائیں۔"
+  },
+  "unit-converter": {
+    "name": "یونٹ کنورٹر",
+    "description": "لمبائی، وزن، اور درجہ حرارت جیسی اکائیاں تبدیل کریں۔"
+  },
+  "json-validator": {
+    "name": "JSON ویلیڈیٹر",
+    "description": "چیک کریں کہ آپ کا JSON درست اور صحیح فارمیٹ میں ہے۔"
+  },
+  "password-generator": {
+    "name": "پاسورڈ جنریٹر",
+    "description": "مضبوط اور محفوظ پاسورڈ بنائیں۔"
+  },
+  "url-encoder-decoder": {
+    "name": "URL اینکوڈر/ڈیکوڈر",
+    "description": "ویب کے لیے URLs اینکوڈ یا ڈیکوڈ کریں۔"
+  },
+  "timestamp-converter": {
+    "name": "ٹائم اسٹیمپ کنورٹر",
+    "description": "Unix ٹائم اسٹیمپ کو قابلِ پڑھائی تاریخ میں تبدیل کریں۔"
+  },
+  "gradient-generator": {
+    "name": "گریڈینٹ جنریٹر",
+    "description": "کسٹم رنگوں کے ساتھ CSS گریڈینٹ بنائیں۔"
+  }
+}

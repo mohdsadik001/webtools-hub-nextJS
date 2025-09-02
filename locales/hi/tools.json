@@ -1,0 +1,58 @@
+{
+  "text-case-converter": {
+    "name": "टेक्स्ट केस कनवर्टर",
+    "description": "टेक्स्ट को अपरकेस, लोअरकेस, या सेंटेंस केस में बदलें।"
+  },
+  "lorem-ipsum-generator": {
+    "name": "लोरेम इप्सम जेनरेटर",
+    "description": "यादृच्छिक लोरेम इप्सम टेक्स्ट जेनरेट करता है।"
+  },
+  "text-counter": {
+    "name": "टेक्स्ट काउंटर",
+    "description": "अपने टेक्स्ट में अक्षर, शब्द और वाक्य गिनें।"
+  },
+  "multiple-whitespace-remover": {
+    "name": "अतिरिक्त रिक्त स्थान हटाएं",
+    "description": "टेक्स्ट से कई स्पेस हटाएं।"
+  },
+  "text-diff-checker": {
+    "name": "टेक्स्ट डिफ चेकर",
+    "description": "दो टेक्स्ट की तुलना करें और अंतर हाइलाइट करें।"
+  },
+  "base64-encoder": {
+    "name": "Base64 एन्कोडर",
+    "description": "टेक्स्ट या फ़ाइलों को Base64 फॉर्मेट में एन्कोड करें।"
+  },
+  "currency-converter": {
+    "name": "करेंसी कनवर्टर",
+    "description": "एक मुद्रा को दूसरी में वास्तविक समय में बदलें।"
+  },
+  "qr-code-generator": {
+    "name": "QR कोड जेनरेटर",
+    "description": "टेक्स्ट या URL से QR कोड बनाएं।"
+  },
+  "unit-converter": {
+    "name": "यूनिट कनवर्टर",
+    "description": "लंबाई, वजन और तापमान जैसी इकाइयों को बदलें।"
+  },
+  "json-validator": {
+    "name": "JSON वैलिडेटर",
+    "description": "जांचें कि आपका JSON मान्य और सही फॉर्मेट में है।"
+  },
+  "password-generator": {
+    "name": "पासवर्ड जेनरेटर",
+    "description": "मजबूत और सुरक्षित पासवर्ड जेनरेट करें।"
+  },
+  "url-encoder-decoder": {
+    "name": "URL एन्कोडर/डिकोडर",
+    "description": "वेब के लिए URLs एन्कोड या डिकोड करें।"
+  },
+  "timestamp-converter": {
+    "name": "टाइमस्टैम्प कनवर्टर",
+    "description": "Unix टाइमस्टैम्प को पठनीय तारीख में बदलें।"
+  },
+  "gradient-generator": {
+    "name": "ग्रेडिएंट जेनरेटर",
+    "description": "कस्टम रंगों के साथ CSS ग्रेडिएंट बनाएं।"
+  }
+}

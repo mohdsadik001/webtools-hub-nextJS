@@ -1,0 +1,58 @@
+{
+  "text-case-converter": {
+    "name": "Text Case Converter",
+    "description": "Convert text to uppercase, lowercase, or sentence case."
+  },
+  "lorem-ipsum-generator": {
+    "name": "Lorem Ipsum Generator",
+    "description": "Generates random lorem ipsum text."
+  },
+  "text-counter": {
+    "name": "Text Counter",
+    "description": "Count characters, words and sentences in your text."
+  },
+  "multiple-whitespace-remover": {
+    "name": "Multiple Whitespace Remover",
+    "description": "Removes multiple spaces from text."
+  },
+  "text-diff-checker": {
+    "name": "Text Diff Checker",
+    "description": "Compare two texts and highlight differences."
+  },
+  "base64-encoder": {
+    "name": "Base64 Encoder",
+    "description": "Encode text or files in Base64 format."
+  },
+  "currency-converter": {
+    "name": "Currency Converter",
+    "description": "Convert one currency into another in real-time."
+  },
+  "qr-code-generator": {
+    "name": "QR Code Generator",
+    "description": "Create QR codes from text or URLs."
+  },
+  "unit-converter": {
+    "name": "Unit Converter",
+    "description": "Convert units like length, weight, and temperature."
+  },
+  "json-validator": {
+    "name": "JSON Validator",
+    "description": "Check if your JSON is valid and formatted."
+  },
+  "password-generator": {
+    "name": "Password Generator",
+    "description": "Generate strong and secure passwords."
+  },
+  "url-encoder-decoder": {
+    "name": "URL Encoder/Decoder",
+    "description": "Encode or decode URLs for web usage."
+  },
+  "timestamp-converter": {
+    "name": "Timestamp Converter",
+    "description": "Convert Unix timestamps to readable dates."
+  },
+  "gradient-generator": {
+    "name": "Gradient Generator",
+    "description": "Create CSS gradients with custom colors."
+  }
+}
