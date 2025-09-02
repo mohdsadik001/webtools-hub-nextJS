@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Web Tools Hub
 
-## Getting Started
 
-First, run the development server:
+A collection of handy, everyday **online tools** built with **Next.js** ⚡.  
+Convert text, generate passwords, create QR codes, validate JSON, and much more — all in one place!
 
+---
+
+## ✨ Features
+- 🛠️ 15+ ready-to-use web tools.
+- ⚡ Built with **Next.js** for blazing-fast performance.
+- 📱 Fully responsive design.
+- 🎨 Clean and modern UI.
+- 🔄 Easy to extend with more tools.
+
+---
+
+## 📌 Available Tools
+
+### 📝 Text Tools
+- 🔠 **Text Case Converter** → Convert text to uppercase, lowercase, or sentence case.  
+- 🔠 **Lorem Ipsum Generator** → Generates random lorem ipsum text.  
+- 🔢 **Text Counter** → Count characters, words, and sentences in your text.  
+- ✂️ **Multiple Whitespace Remover** → Removes multiple spaces from text.  
+- 🔍 **Text Diff Checker** → Compare two texts and highlight differences.  
+
+### 👨‍💻 Developer Tools
+- 🧬 **Base64 Encoder** → Encode text or files in Base64 format.  
+- ✅ **JSON Validator** → Check if your JSON is valid and formatted.  
+- 🌐 **URL Encoder/Decoder** → Encode or decode URLs for web usage.  
+
+### 💸 Finance Tools
+- 💸 **Currency Converter** → Convert between multiple currencies in real time.  
+
+### 🧰 Utility Tools
+- 🔳 **QR Code Generator** → Create QR codes from text or URLs.  
+- 📏 **Unit Converter** → Convert units like length, weight, and temperature.  
+- 🔐 **Password Generator** → Generate strong and secure passwords.  
+- ⏱️ **Timestamp Converter** → Convert Unix timestamps to readable dates.  
+
+### 🎨 Color Tools
+- 🌈 **Gradient Generator** → Create CSS gradients with custom colors.  
+- 🎨 **Color Picker** → Select and copy color codes easily.  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/your-username/web-tools-hub.git
+cd web-tools-hub
