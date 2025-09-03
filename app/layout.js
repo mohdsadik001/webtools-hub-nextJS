@@ -5,6 +5,7 @@ import { AppContextProvider } from "@/components/Context/AppContext";
 import "./i18n";
 import ClientLayout from "@/components/ClientLayout"; // ✅
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

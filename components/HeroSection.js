@@ -25,7 +25,7 @@ export default function HeroSection() {
           <div className="flex justify-center gap-4 mb-12 mt-8">
             <button
               onClick={() => router.push("/tools")}
-              className="bg-green-800 text-white px-8 py-3 rounded-lg hover:bg-primary-dull transition-colors cursor-pointer"
+              className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dull transition-colors cursor-pointer"
             >
               {t("exploreButton")} →
             </button>

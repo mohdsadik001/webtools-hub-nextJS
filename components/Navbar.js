@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all h-[8vh]"
+      className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 relative transition-all h-[8vh]"
       role="navigation"
       aria-label={t("common:navigation")}
     >
@@ -48,6 +48,9 @@ const Navbar = () => {
         </Link>
         <Link href="/contact" className="hover:text-primary focus:text-primary focus:outline-none">
           {t("contact")}
+        </Link>
+        <Link href="/blogs" className="hover:text-primary focus:text-primary focus:outline-none">
+          {t("blogs")}
         </Link>
       </div>
 
