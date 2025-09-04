@@ -10,7 +10,7 @@
     "home": { "id": 1, "title": "ہوم", "path": "/" },
     "tools": { "id": 2, "title": "ٹولز", "path": "/tools" },
     "categories": { "id": 3, "title": "زمرہ جات", "path": "/categories" },
-    "contact": { "id": 4, "title": "رابطہ", "path": "/contact" },
-    "blogs": { "id": 5, "title": "بلاگز", "path": "/blogs" }
+    "blogs": { "id": 4, "title": "بلاگز", "path": "/blogs" },
+    "contact": { "id": 5, "title": "رابطہ", "path": "/contact" }
   }
 }

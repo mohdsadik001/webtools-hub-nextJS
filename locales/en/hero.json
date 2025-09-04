@@ -6,12 +6,5 @@
   },
   "subtitle": "No need to bookmark the tools you like separately",
   "description": "WebTools Hub is a free all-in-one toolbox solution created to ease your life by preventing bookmark mess.",
-  "exploreButton": "Explore Tools",
-  "categories": {
-    "Text Tools": "Text Tools",
-    "Conversion Tools": "Conversion Tools",
-    "Color": "Color",
-    "Web": "Web",
-    "Generators": "Generators"
-  }
+  "exploreButton": "Explore Tools"
 }

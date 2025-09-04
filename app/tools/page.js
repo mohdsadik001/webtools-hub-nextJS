@@ -27,13 +27,13 @@ const AllTools = () => {
       role="main"
       aria-labelledby="all-tools-heading"
     >
-      {/* Heading */}
+
       <header className="flex flex-col items-end self-start">
         <h1 id="all-tools-heading" className="text-2xl md:text-3xl font-semibold uppercase" >{t("allToolsHead")}</h1>
         <div className="w-24 h-0.5 bg-primary rounded-full mt-1"></div>
       </header>
 
-      {/* Tools Grid */}
+
       <section
         role="list"
         aria-label={t("allToolsHead")}

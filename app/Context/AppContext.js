@@ -8,6 +8,7 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
   const router = useRouter();
+  
   const [tools, setTools] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 

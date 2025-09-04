@@ -10,7 +10,7 @@
     "home": { "id": 1, "title": "Accueil", "path": "/" },
     "tools": { "id": 2, "title": "Outils", "path": "/tools" },
     "categories": { "id": 3, "title": "Catégories", "path": "/categories" },
-    "contact": { "id": 4, "title": "Contact", "path": "/contact" },
-    "blogs": { "id": 5, "title": "Blogs", "path": "/blogs" }
+    "blogs": { "id": 4, "title": "Blogs", "path": "/blogs" },
+    "contact": { "id": 5, "title": "Contact", "path": "/contact" }
   }
 }
