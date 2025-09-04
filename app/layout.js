@@ -15,12 +15,29 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "WebTools Hub - Free Online Tools",
-  description:
-    "Free online tools for text conversion, currency conversion, unit converters, color picker, qr code generator, and more",
-};
 
+export const metadata = {
+  title: "WebTools Hub - All Online Tools in One Box",
+  description:
+    "WebTools Hub is a free all-in-one toolbox with text tools, converters, generators, and utilities to make your life easier. Explore tools without bookmark clutter.",
+  keywords:
+    "online tools, text tools, converters, generators, utilities, free web tools, WebTools Hub",
+  authors: [{ name: "Mohd Sadik", url: "https://webtools-hub.vercel.app/" }],
+  creator: "Mohd Sadik",
+  publisher: "WebTools Hub",
+  openGraph: {
+    type: "website",
+    title: "WebTools Hub - All Online Tools in One Box",
+    description:
+      "WebTools Hub is a free all-in-one toolbox for text tools, converters, generators, and utilities.",
+    url: "https://webtools-hub.vercel.app/",
+    siteName: "WebTools Hub",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en"> 

@@ -1,6 +1,16 @@
 {
-  "home": "Accueil",
-  "tools": "Outils",
-  "contact": "Contact",
-  "categories": "Catégories"
+  "common": {
+    "navigation": "Navigation principale",
+    "searchPlaceholder": "Rechercher des outils...",
+    "goHome": "Aller à l'accueil",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "navItems": {
+    "home": { "id": 1, "title": "Accueil", "path": "/" },
+    "tools": { "id": 2, "title": "Outils", "path": "/tools" },
+    "categories": { "id": 3, "title": "Catégories", "path": "/categories" },
+    "contact": { "id": 4, "title": "Contact", "path": "/contact" },
+    "blogs": { "id": 5, "title": "Blogs", "path": "/blogs" }
+  }
 }

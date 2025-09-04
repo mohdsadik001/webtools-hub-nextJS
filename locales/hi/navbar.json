@@ -1,7 +1,16 @@
 {
-  "home": "होम",
-  "tools": "उपकरण",
-  "contact": "संपर्क",
-  "categories": "श्रेणियाँ",
-  "blogs" : "ब्लॉग्स"
+  "common": {
+    "navigation": "मुख्य नेविगेशन",
+    "searchPlaceholder": "टूल्स खोजें...",
+    "goHome": "होम पर जाएं",
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें"
+  },
+  "navItems": {
+    "home": { "id": 1, "title": "होम", "path": "/" },
+    "tools": { "id": 2, "title": "टूल्स", "path": "/tools" },
+    "categories": { "id": 3, "title": "श्रेणियाँ", "path": "/categories" },
+    "contact": { "id": 4, "title": "संपर्क", "path": "/contact" },
+    "blogs": { "id": 5, "title": "ब्लॉग्स", "path": "/blogs" }
+  }
 }

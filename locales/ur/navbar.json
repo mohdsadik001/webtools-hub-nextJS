@@ -1,6 +1,16 @@
 {
-  "home": "ہوم",
-  "tools": "اوزار",
-  "contact": "رابطہ",
-  "categories": "زمرے"
+  "common": {
+    "navigation": "اہم نیویگیشن",
+    "searchPlaceholder": "ٹولز تلاش کریں...",
+    "goHome": "ہوم پر جائیں",
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں"
+  },
+  "navItems": {
+    "home": { "id": 1, "title": "ہوم", "path": "/" },
+    "tools": { "id": 2, "title": "ٹولز", "path": "/tools" },
+    "categories": { "id": 3, "title": "زمرہ جات", "path": "/categories" },
+    "contact": { "id": 4, "title": "رابطہ", "path": "/contact" },
+    "blogs": { "id": 5, "title": "بلاگز", "path": "/blogs" }
+  }
 }

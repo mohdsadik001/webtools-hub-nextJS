@@ -1,15 +1,12 @@
 {
   "appName": "WebToolsHub",
   "welcome": "Welcome to WebToolsHub",
-  "searchPlaceholder": "Search for a tool...",
   "noResults": "No tools found",
   "allTools": "Explore Tools",
   "contact": "Contact Us",
   "categories": "Tools Categories",
   "allToolsHead": "All Tools",
   "inputAreaLabel": "Input Text",
-
-
 
   "textTools": "Text Tools",
   "colorTools": "Color Tools",
@@ -172,14 +169,9 @@
   "exportPngBtn": "Export PNG",
   "exportFailedAlert": "Failed to export image.",
 
-
-  
   "colorPicker": "🎨 Color Picker",
   "copied": "Copied!",
   "copyColor": "Copy Color",
-
-
-
 
   "unitConverterTitle": "Unit Converter",
   "lengthConverter": "Length Converter",
@@ -188,9 +180,6 @@
   "areaConverter": "Area Converter",
   "massConverter": "Mass Converter",
 
-
-  
-  
   "lengthConverterTitle": "Length Converter",
   "lengthPlaceholder": "Enter length",
   "lengthUnits": {
@@ -214,8 +203,6 @@
     "mi": "Imperial distance unit."
   },
 
-
-
   "tempretureConverterTitle": "🌡️ Temperature Converter",
   "tempreturePlaceholder": "Enter temperature",
   "copyButton": "📋 Copy",
@@ -231,7 +218,6 @@
     "normal": "🌤️ Moderate"
   },
 
-
   "timeConverterTitle": "Time Converter",
   "timePlaceholder": "Enter time",
   "exportResult": "Export Result",
@@ -243,7 +229,6 @@
   "Days": "Days",
   "Weeks": "Weeks",
   "Years": "Years",
-
 
   "areaConverterTitle": "Area Converter",
   "enterArea": "Enter area",
@@ -257,7 +242,6 @@
   "squareYard": "Square Yard (yd²)",
   "acre": "Acre",
   "hectare": "Hectare",
-
 
   "massConverterTitle": "Mass Converter",
   "enterMass": "Enter mass",
@@ -283,6 +267,4 @@
   "sending": "Sending...",
   "messageSent": "Message sent successfully!",
   "messageFailed": "Failed to send. Please try again."
-
 }
-

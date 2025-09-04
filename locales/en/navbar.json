@@ -1,7 +1,16 @@
 {
-  "home": "Home",
-  "tools" : "Tools",
-  "contact": "Contact",
-  "categories": "Categories",
-  "blogs" : "blogs"
+  "common": {
+    "navigation": "Main Navigation",
+    "searchPlaceholder": "Search tools...",
+    "goHome": "Go to Home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "navItems": {
+    "home": { "id": 1, "title": "Home", "path": "/" },
+    "tools": { "id": 2, "title": "Tools", "path": "/tools" },
+    "categories": { "id": 3, "title": "Categories", "path": "/categories" },
+    "contact": { "id": 4, "title": "Contact", "path": "/contact" },
+    "blogs": { "id": 5, "title": "Blogs", "path": "/blogs" }
+  }
 }
