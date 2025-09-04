@@ -7,8 +7,15 @@
   "contact": "Contact Us",
   "categories": "Tools Categories",
   "allToolsHead": "All Tools",
-  "inputAreaLabel" : "Input Text",
+  "inputAreaLabel": "Input Text",
 
+
+
+  "textTools": "Text Tools",
+  "colorTools": "Color Tools",
+  "developerTools": "Developer Tools",
+  "financeTools": "Finance Tools",
+  "utilityTools": "Utility Tools",
 
   "categoriesTitle": "Tools Categories",
   "textToolsLabel": "Text Tools",
@@ -16,7 +23,6 @@
   "developerToolsLabel": "Developer Tools",
   "financeToolsLabel": "Finance Tools",
   "utilityToolsLabel": "Utility Tools",
-
 
   "textCaseConverter": "Text Case Converter",
   "caseConverterTitle": "Case Converter",
@@ -32,7 +38,6 @@
   "copyTextBtn": "Copy Text",
   "copiedAlert": "Copied!",
 
-
   "textCounter": "Text Counter",
   "characterSingular": "Character",
   "characterPlural": "Characters",
@@ -41,18 +46,15 @@
   "sentenceSingular": "Sentence",
   "sentencePlural": "Sentences",
 
-
   "loremIpsum": "Lorem Ipsum Generator",
   "paragraphCountPlaceholder": "Paragraph Count",
   "sentenceCountPlaceholder": "Sentence Count Per Para.",
   "wordCountPlaceholder": "Word Count Per Sentence.",
   "generateBtn": "Generate",
   "loremIpsumTextLabel": "Lorem ipsum text",
-  
 
   "multipleWhiteSpaceRemover": "Multiple White Space Remover",
   "removeMultipleSpacesBtn": "Remove Multiple Spaces",
-
 
   "textDiffChecker": "Text Diff Checker",
   "textDiffCheckerTitle": "Enhanced Text Difference Checker",
@@ -67,11 +69,10 @@
   "modifiedTextPlaceholder": "Enter modified text...",
   "diffCopiedAlert": "Diff copied to clipboard!",
 
-  
   "base64ToolkitTitle": "🧬 Base64 Toolkit",
   "encodeTextTab": "Encode Text",
   "decodeTextTab": "Decode Text",
-  
+
   "base64Encoder": "Base64 Encoder",
   "base64EncoderTitle": "🧬 Base64 Encoder",
   "inputPlaceholder": "Enter text to encode...",
@@ -81,21 +82,19 @@
   "encodedOutputLabel": "Encoded Base64 Output:",
   "outputPlaceholder": "Output will appear here...",
   "encodingFailed": "Encoding failed. Make sure the input is valid UTF-8.",
-  
+
   "base64DecoderTitle": "🧬 Base64 Decoder",
   "decodedOutputLabel": "Decoded Output:",
   "invalidBase64Alert": "❌ Invalid Base64 input.",
-  
+
   "fileToBase64Tab": "File to Base64",
   "fileLabel": "📁 File:",
   "copyBase64Btn": "📋 Copy Base64",
 
-
-  "fileToBase64Title" : "File to Base64",
+  "fileToBase64Title": "File to Base64",
   "fileDecoderTab": "File Decoder",
-  "fileDecoderTitle": "📁 Upload Base64 File to Decode",  
+  "fileDecoderTitle": "📁 Upload Base64 File to Decode",
 
-  
   "currencyConverter": "Currency Converter",
   "currencyConverterTitle": "💸 Currency Converter",
   "amountLabel": "Amount",
@@ -108,18 +107,13 @@
   "conversionFailedAlert": "Conversion failed.",
   "invalidAmountAlert": "Enter valid amount",
 
-
   "qrCodeGenerator": "QR Code Generator",
   "qrCodeGeneratorTitle": "QR Code Generator",
   "qrCodeWillAppear": "QR code will appear here",
-  "qrGeneratedFor" : "QR Code Generated Successfully!",
+  "qrGeneratedFor": "QR Code Generated Successfully!",
   "exportAsPngBtn": "Export as PNG",
   "exportAsJpegBtn": "Export as JPEG",
   "emptyInputAlert": "Please enter some text to generate QR code!",
-  
-
-  "unitConverter": "Unit Converter",
-
 
   "jsonValidator": "JSON Validator",
   "jsonValidatorTitle": "🧾 JSON Validator & Formatter",
@@ -128,7 +122,6 @@
   "exportJsonBtn": "Export .json",
   "exportTxtBtn": "Export .txt",
   "clearAllBtn": "Clear All",
-
 
   "passwordGenerator": "Password Generator",
   "passwordGeneratorTitle": "🔐 Password Generator",
@@ -143,8 +136,6 @@
   "strengthMedium": "Medium",
   "strengthStrong": "Strong",
 
-
-
   "urlEncoderDecoder": "URL Encoder Decoder",
   "urlEncoderDecoderTitle": "🔗 URL Encoder / Decoder",
   "encodeBtn": "Encode",
@@ -155,14 +146,12 @@
   "copyResultBtn": "Copy Result",
   "invalidInputAlert": "Invalid input for decoding!",
 
-
   "timeStampConvert": "Time Stamp Converter",
   "timestampConverterTitle": "⏱️ Timestamp Converter",
   "unixTimestampLabel": "🔢 UNIX Timestamp",
   "humanReadableDateLabel": "📅 Human-Readable Date",
   "useCurrentTimeBtn": "Use Current Time",
   "exportBtn": "Export",
-
 
   "gradientGenerator": "Gradient Generator",
   "gradientGeneratorTitle": "🌈 Gradient Generator",
@@ -183,6 +172,110 @@
   "exportPngBtn": "Export PNG",
   "exportFailedAlert": "Failed to export image.",
 
-  "colorPicker": "Color Picker"
+  "colorPicker": "Color Picker",
+
+  "unitConverterTitle": "Unit Converter",
+  "lengthConverter": "Length Converter",
+  "tempretureConverter": "Tempreture Converter",
+  "timeConverter": "Time Converter",
+  "areaConverter": "Area Converter",
+  "massConverter": "Mass Converter",
+
+
+  
+  
+  "lengthConverterTitle": "Length Converter",
+  "lengthPlaceholder": "Enter length",
+  "lengthUnits": {
+    "mm": "Millimeter",
+    "cm": "Centimeter",
+    "m": "Meter",
+    "km": "Kilometer",
+    "in": "Inch",
+    "ft": "Foot",
+    "yd": "Yard",
+    "mi": "Mile"
+  },
+  "lengthUnitDescriptions": {
+    "mm": "Smallest metric unit.",
+    "cm": "Used in everyday measurements.",
+    "m": "Base unit of length.",
+    "km": "Common for long distances.",
+    "in": "Imperial unit, 2.54 cm.",
+    "ft": "12 inches.",
+    "yd": "3 feet.",
+    "mi": "Imperial distance unit."
+  },
+
+
+
+  "tempretureConverterTitle": "🌡️ Temperature Converter",
+  "tempreturePlaceholder": "Enter temperature",
+  "copyButton": "📋 Copy",
+  "copiedMsg": "Copied!",
+  "tempretureUnits": {
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "indicators": {
+    "cold": "❄️ Cold",
+    "hot": "🔥 Hot",
+    "normal": "🌤️ Moderate"
+  },
+
+
+  "timeConverterTitle": "Time Converter",
+  "timePlaceholder": "Enter time",
+  "exportResult": "Export Result",
+  "Exported!": "Exported!",
+  "Milliseconds": "Milliseconds",
+  "Seconds": "Seconds",
+  "Minutes": "Minutes",
+  "Hours": "Hours",
+  "Days": "Days",
+  "Weeks": "Weeks",
+  "Years": "Years",
+
+
+  "areaConverterTitle": "Area Converter",
+  "enterArea": "Enter area",
+  "swapUnits": "Swap Units",
+  "squareMillimeter": "Square Millimeter (mm²)",
+  "squareCentimeter": "Square Centimeter (cm²)",
+  "squareMeter": "Square Meter (m²)",
+  "squareKilometer": "Square Kilometer (km²)",
+  "squareInch": "Square Inch (in²)",
+  "squareFoot": "Square Foot (ft²)",
+  "squareYard": "Square Yard (yd²)",
+  "acre": "Acre",
+  "hectare": "Hectare",
+
+
+  "massConverterTitle": "Mass Converter",
+  "enterMass": "Enter mass",
+  "milligram": "Milligram (mg)",
+  "milligramDesc": "1 mg = 0.001 grams (used for medicine, micro-measurements)",
+  "gram": "Gram (g)",
+  "gramDesc": "1 gram = base unit of mass in the metric system",
+  "kilogram": "Kilogram (kg)",
+  "kilogramDesc": "1 kg = 1000 grams (used for measuring body weight, groceries)",
+  "metricTon": "Metric Ton (t)",
+  "metricTonDesc": "1 t = 1,000,000 grams (used for heavy goods and cargo)",
+  "ounce": "Ounce (oz)",
+  "ounceDesc": "1 oz ≈ 28.35 grams (used in the US for food, mail)",
+  "pound": "Pound (lb)",
+  "poundDesc": "1 lb ≈ 453.59 grams (used in US customary system)",
+  "usTon": "US Ton",
+  "usTonDesc": "1 US Ton = 907,185 grams (used for large mass in the US)",
+
+  "namePlaceholder": "Your Name",
+  "emailPlaceholder": "Your Email",
+  "messagePlaceholder": "Your Message",
+  "sendMessage": "Send Message ✉️",
+  "sending": "Sending...",
+  "messageSent": "Message sent successfully!",
+  "messageFailed": "Failed to send. Please try again."
 
 }
+

@@ -4,8 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const financeTools = [
   {
-    key: "currency-converter",
-    labelKey: "Currency Converter",
+    key: "currencyConverter",
     path: "/tools/finance/currency-converter",
     icon: "💸",
   },
@@ -18,7 +17,7 @@ export default function FinanceToolsPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4">
       <h1 className="text-3xl font-bold text-center mb-8 text-primary">
-        {t("financeTools") || "Finance Tools"}
+        {t("financeTools")}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {financeTools.map((tool) => (
@@ -28,10 +27,10 @@ export default function FinanceToolsPage() {
             className="flex items-center gap-4 p-6 bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100 hover:border-primary"
           >
             <span className="text-3xl">{tool.icon}</span>
-            <span className="text-lg font-semibold">{tool.labelKey}</span>
+            <span className="text-lg font-semibold">{t(tool.key)}</span>
           </Link>
         ))}
       </div>
-      </div>
-  )
+    </div>
+  );
 }

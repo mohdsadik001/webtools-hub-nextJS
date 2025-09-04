@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useAppContext } from "../../components/Context/AppContext";
+import { useAppContext } from "../Context/AppContext";
 import ToolCard from "../../components/ToolCard";
 import { useTranslation } from "react-i18next";
 

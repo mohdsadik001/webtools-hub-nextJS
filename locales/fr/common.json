@@ -9,6 +9,13 @@
   "allToolsHead": "Tous les outils",
   "inputAreaLabel": "Saisir le texte",
 
+
+  "textTools": "Outils de Texte",
+  "colorTools": "Outils de Couleur",
+  "developerTools": "Outils de Développement",
+  "financeTools": "Outils Financiers",
+  "utilityTools": "Outils Utilitaires",
+
   "categoriesTitle": "Catégories d'outils",
   "textToolsLabel": "Outils de texte",
   "colorToolsLabel": "Outils de couleur",
@@ -102,12 +109,10 @@
   "qrCodeGenerator": "Générateur de QR Code",
   "qrCodeGeneratorTitle": "Générateur de QR Code",
   "qrCodeWillAppear": "Le QR code apparaîtra ici",
-  "qrGeneratedFor" : "Code QR généré avec succès !",
+  "qrGeneratedFor": "Code QR généré avec succès !",
   "exportAsPngBtn": "Exporter en PNG",
   "exportAsJpegBtn": "Exporter en JPEG",
   "emptyInputAlert": "Veuillez entrer du texte pour générer un QR code !",
-
-  "unitConverter": "Convertisseur d'unités",
 
   "jsonValidator": "Validateur JSON",
   "jsonValidatorTitle": "🧾 Validateur & Formateur JSON",
@@ -166,5 +171,114 @@
   "exportPngBtn": "Exporter en PNG",
   "exportFailedAlert": "Échec de l'exportation de l'image.",
 
-  "colorPicker": "Sélecteur de couleur"
+  "colorPicker": "Sélecteur de couleur",
+
+  "unitConverterTitle": "Convertisseur d'unités",
+  "lengthConverter": "Convertisseur de longueur",
+  "tempretureConverter": "Convertisseur de température",
+  "timeConverter": "Convertisseur de temps",
+  "areaConverter": "Convertisseur de surface",
+  "massConverter": "Convertisseur de masse",
+
+
+  
+  "lengthConverterTitle": "Convertisseur de Longueur",
+  "lengthPlaceholder": "Entrez la longueur",
+
+  "lengthUnits": {
+    "mm": "Millimètre",
+    "cm": "Centimètre",
+    "m": "Mètre",
+    "km": "Kilomètre",
+    "in": "Pouce",
+    "ft": "Pied",
+    "yd": "Yard",
+    "mi": "Mile"
+  },
+  "lengthUnitDescriptions": {
+    "mm": "La plus petite unité métrique.",
+    "cm": "Utilisé dans les mesures quotidiennes.",
+    "m": "Unité de base de longueur.",
+    "km": "Utilisé pour les longues distances.",
+    "in": "Unité impériale, 2,54 cm.",
+    "ft": "Équivaut à 12 pouces.",
+    "yd": "Équivaut à 3 pieds.",
+    "mi": "Unité impériale de distance."
+  },
+  
+
+
+  
+  "title": "🌡️ Convertisseur de température",
+  "placeholder": "Entrez la température",
+  "copyButton": "📋 Copier",
+  "copiedMsg": "Copié !",
+  "tempretureUnits": {
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "indicators": {
+    "cold": "❄️ Froid",
+    "hot": "🔥 Chaud",
+    "normal": "🌤️ Modéré"
+  },
+  "timeConverterTitle": "Convertisseur de Temps",
+  "timePlaceholder": "Entrez le temps",
+  "exportResult": "Exporter le résultat",
+  "Exported!": "Exporté !",
+  "Milliseconds": "Millisecondes",
+  "Seconds": "Secondes",
+  "Minutes": "Minutes",
+  "Hours": "Heures",
+  "Days": "Jours",
+  "Weeks": "Semaines",
+  "Years": "Années",
+
+
+  
+  "areaConverterTitle": "Convertisseur de Surface",
+  "enterArea": "Entrez la surface",
+  "swapUnits": "Échanger les unités",
+  "squareMillimeter": "Millimètre carré (mm²)",
+  "squareCentimeter": "Centimètre carré (cm²)",
+  "squareMeter": "Mètre carré (m²)",
+  "squareKilometer": "Kilomètre carré (km²)",
+  "squareInch": "Pouce carré (in²)",
+  "squareFoot": "Pied carré (ft²)",
+  "squareYard": "Yard carré (yd²)",
+  "acre": "Acre",
+  "hectare": "Hectare",
+
+  "massConverterTitle": "Convertisseur de masse",
+  "enterMass": "Entrez la masse",
+  "milligram": "Milligramme (mg)",
+  "milligramDesc": "1 mg = 0,001 gramme (utilisé pour les médicaments, micro-mesures)",
+  "gram": "Gramme (g)",
+  "gramDesc": "1 g = unité de base de masse dans le système métrique",
+  "kilogram": "Kilogramme (kg)",
+  "kilogramDesc": "1 kg = 1000 grammes (utilisé pour le poids corporel, les courses)",
+  "metricTon": "Tonne métrique (t)",
+  "metricTonDesc": "1 t = 1 000 000 grammes (utilisé pour les marchandises lourdes et le fret)",
+  "ounce": "Once (oz)",
+  "ounceDesc": "1 oz ≈ 28,35 grammes (utilisé aux États-Unis pour la nourriture, le courrier)",
+  "pound": "Livre (lb)",
+  "poundDesc": "1 lb ≈ 453,59 grammes (utilisé dans le système coutumier américain)",
+  "usTon": "Tonne US",
+  "usTonDesc": "1 tonne US = 907 185 grammes (utilisé pour les grandes masses aux États-Unis)",
+
+
+  
+  "namePlaceholder": "Votre nom",
+  "emailPlaceholder": "Votre e-mail",
+  "messagePlaceholder": "Votre message",
+  "sendMessage": "Envoyer le message ✉️",
+  "sending": "Envoi en cours...",
+  "messageSent": "Message envoyé avec succès !",
+  "messageFailed": "Échec de l'envoi. Veuillez réessayer."
+
 }
+
+
+
+

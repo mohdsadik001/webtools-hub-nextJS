@@ -6,53 +6,55 @@ import { useTranslation } from "react-i18next";
 const Contact = () => {
   const form = useRef();
   const [status, setStatus] = useState("");
+  const { t } = useTranslation("common");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus(t("sending"));
 
     emailjs
       .sendForm(
-        "webtools_hub_service",    // Replace with your service ID
-        "template_nkad7xj",   // Replace with your template ID
+        "webtools_hub_service",    
+        "template_nkad7xj",   
         form.current,
-        "I_IclYARBQGz-L2Na"     // Replace with your public key
+        "I_IclYARBQGz-L2Na"     
       )
       .then(
         () => {
-          setStatus("Message sent successfully!");
+          setStatus(t("messageSent"));
           form.current.reset();
         },
         (error) => {
           console.error(error.text);
-          setStatus("Failed to send. Please try again.");
+          setStatus(t("messageFailed"));
         }
       );
   };
-  const {t} = useTranslation("common")
 
   return (
     <div className="mt-16 px-6 md:px-16 lg:px-24 xl:px-32 py-10">
-      <h2 className="text-3xl font-bold text-primary mb-6">📬 {t("contact")}</h2>
+      <h2 className="text-3xl font-bold text-primary mb-6">
+        📬 {t("contact")}
+      </h2>
       <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-4">
         <input
           type="text"
           name="user_name"
-          placeholder="Your Name"
+          placeholder={t("namePlaceholder")}
           required
           className="border border-gray-300 px-4 py-3 rounded outline-primary"
         />
         <input
           type="email"
           name="user_email"
-          placeholder="Your Email"
+          placeholder={t("emailPlaceholder")}
           required
           className="border border-gray-300 px-4 py-3 rounded outline-primary"
         />
         <textarea
           name="message"
           rows="5"
-          placeholder="Your Message"
+          placeholder={t("messagePlaceholder")}
           required
           className="border border-gray-300 px-4 py-3 rounded outline-primary resize-none"
         />
@@ -60,7 +62,7 @@ const Contact = () => {
           type="submit"
           className="bg-primary text-white text-lg py-3 px-6 rounded hover:bg-primary-dull transition"
         >
-          Send Message ✉️
+          {t("sendMessage")}
         </button>
       </form>
 

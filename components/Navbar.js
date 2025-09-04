@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useAppContext } from "@/components/Context/AppContext"; // adjust path if needed
+import { useAppContext } from "@/app/Context/AppContext"; // adjust path if needed
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
 import { Menu, X, Search } from "lucide-react"; // ✅ Next icons
@@ -20,8 +20,10 @@ const Navbar = () => {
     }
   }, [searchQuery, router]);
 
+
+
   return (
-    <nav
+    <main
       className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 relative transition-all h-[8vh]"
       role="navigation"
       aria-label={t("common:navigation")}
@@ -140,7 +142,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </nav>
+    </main>
   );
 };
 

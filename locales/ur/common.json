@@ -9,6 +9,16 @@
   "allToolsHead": "تمام ٹولز",
   "inputAreaLabel": "متن درج کریں",
 
+  "textTools": "متن کے اوزار",
+  "colorTools": "رنگ کے اوزار",
+  "developerTools": "ڈویلپر کے اوزار",
+  "financeTools": "مالیاتی اوزار",
+  "utilityTools": "یوٹیلیٹی کے اوزار",
+
+
+
+
+
   "categoriesTitle": "ٹولز کی اقسام",
   "textToolsLabel": "متنی ٹولز",
   "colorToolsLabel": "رنگوں کے ٹولز",
@@ -102,12 +112,10 @@
   "qrCodeGenerator": "QR کوڈ جنریٹر",
   "qrCodeGeneratorTitle": "QR کوڈ جنریٹر",
   "qrCodeWillAppear": "QR کوڈ یہاں ظاہر ہوگا",
-  "qrGeneratedFor" : "QR کوڈ کامیابی کے ساتھ تیار ہوا!",
+  "qrGeneratedFor": "QR کوڈ کامیابی کے ساتھ تیار ہوا!",
   "exportAsPngBtn": "PNG میں ایکسپورٹ کریں",
   "exportAsJpegBtn": "JPEG میں ایکسپورٹ کریں",
   "emptyInputAlert": "QR کوڈ بنانے کے لئے براہ کرم کچھ متن درج کریں!",
-
-  "unitConverter": "یونٹ کنورٹر",
 
   "jsonValidator": "JSON ویلیڈیٹر",
   "jsonValidatorTitle": "🧾 JSON ویلیڈیٹر اور فارمیٹر",
@@ -166,5 +174,110 @@
   "exportPngBtn": "PNG ایکسپورٹ کریں",
   "exportFailedAlert": "تصویر ایکسپورٹ ناکام ہوگئی۔",
 
-  "colorPicker": "رنگ منتخب کرنے والا"
+  "colorPicker": "رنگ منتخب کرنے والا",
+
+  "unitConverterTitle": "یونٹ کنورٹر",
+  "lengthConverter": "لمبائی کنورٹر",
+  "tempretureConverter": "درجہ حرارت کنورٹر",
+  "timeConverter": "وقت کنورٹر",
+  "areaConverter": "رقبہ کنورٹر",
+  "massConverter": "کمیت کنورٹر",
+
+
+  "lengthConverterTitle": "لمبائی کنورٹر",
+  "lengthPlaceholder": "لمبائی درج کریں",
+  "lengthUnits": {
+    "mm": "ملی میٹر",
+    "cm": "سینٹی میٹر",
+    "m": "میٹر",
+    "km": "کلومیٹر",
+    "in": "انچ",
+    "ft": "فٹ",
+    "yd": "گز",
+    "mi": "میل"
+  },
+  "lengthUnitDescriptions": {
+    "mm": "میٹرک کا سب سے چھوٹا یونٹ۔",
+    "cm": "روزمرہ پیمائش کے لئے استعمال ہوتا ہے۔",
+    "m": "لمبائی کی بنیادی اکائی۔",
+    "km": "زیادہ فاصلے ناپنے کے لئے۔",
+    "in": "انگریزی اکائی، 2.54 سینٹی میٹر۔",
+    "ft": "12 انچ کے برابر۔",
+    "yd": "3 فٹ کے برابر۔",
+    "mi": "انگریزی فاصلہ اکائی۔"
+  },
+
+
+  
+  "tempretureConverterTitle": "🌡️ درجہ حرارت کنورٹر",
+  "tempreturePlaceholder": "درجہ حرارت درج کریں",
+  "copyButton": "📋 کاپی کریں",
+  "copiedMsg": "کاپی ہو گیا!",
+  
+  "tempretureUnits": {
+    "celsius": "سیلسیس",
+    "fahrenheit": "فارن ہائیٹ",
+    "kelvin": "کیلون"
+  },
+  "indicators": {
+    "cold": "❄️ ٹھنڈا",
+    "hot": "🔥 گرم",
+    "normal": "🌤️ معتدل"
+  },
+  
+  "timeConverterTitle": "وقت کنورٹر",
+  "timePlaceholder": "وقت درج کریں",
+  "exportResult": "نتیجہ ایکسپورٹ کریں",
+  "Exported!": "ایکسپورٹ ہو گیا!",
+  "Milliseconds": "ملی سیکنڈ",
+  "Seconds": "سیکنڈ",
+  "Minutes": "منٹ",
+  "Hours": "گھنٹے",
+  "Days": "دن",
+  "Weeks": "ہفتے",
+  "Years": "سال",
+
+  
+  "areaConverterTitle": "رقبہ کنورٹر",
+  "enterArea": "رقبہ درج کریں",
+  "swapUnits": "یونٹس تبدیل کریں",
+  "squareMillimeter": "مربع ملی میٹر (mm²)",
+  "squareCentimeter": "مربع سینٹی میٹر (cm²)",
+  "squareMeter": "مربع میٹر (m²)",
+  "squareKilometer": "مربع کلو میٹر (km²)",
+  "squareInch": "مربع انچ (in²)",
+  "squareFoot": "مربع فٹ (ft²)",
+  "squareYard": "مربع یارڈ (yd²)",
+  "acre": "ایکڑ",
+  "hectare": "ہیکٹر",
+
+
+  
+  "massConverterTitle": "وزن تبدیل کرنے والا",
+  "enterMass": "وزن درج کریں",
+  "milligram": "ملی گرام (mg)",
+  "milligramDesc": "1 mg = 0.001 گرام (ادویات، باریک پیمائش کے لیے استعمال)",
+  "gram": "گرام (g)",
+  "gramDesc": "1 گرام = میٹرک نظام میں وزن کی بنیادی اکائی",
+  "kilogram": "کلوگرام (kg)",
+  "kilogramDesc": "1 kg = 1000 گرام (جسمانی وزن، سبزی، سودا سلف کے لیے استعمال)",
+  "metricTon": "میٹرک ٹن (t)",
+  "metricTonDesc": "1 t = 1,000,000 گرام (بھاری سامان اور کارگو کے لیے استعمال)",
+  "ounce": "اونس (oz)",
+  "ounceDesc": "1 oz ≈ 28.35 گرام (امریکہ میں کھانے اور ڈاک کے لیے استعمال)",
+  "pound": "پاؤنڈ (lb)",
+  "poundDesc": "1 lb ≈ 453.59 گرام (امریکی روایتی نظام میں استعمال)",
+  "usTon": "امریکی ٹن",
+ "usTonDesc": "1 امریکی ٹن = 907,185 گرام (امریکہ میں بڑے وزن کے لیے استعمال)",
+ 
+  "namePlaceholder": "آپ کا نام",
+  "emailPlaceholder": "آپ کا ای میل",
+  "messagePlaceholder": "آپ کا پیغام",
+  "sendMessage": "پیغام بھیجیں ✉️",
+  "sending": "بھیجا جا رہا ہے...",
+  "messageSent": "پیغام کامیابی سے بھیج دیا گیا!",
+  "messageFailed": "بھیجنے میں ناکام۔ دوبارہ کوشش کریں۔"
+
 }
+
+

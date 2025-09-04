@@ -4,32 +4,27 @@ import { useTranslation } from "react-i18next";
 
 const categories = [
   {
-    key: "text",
-    labelKey: "Text Tools",
+    key: "textTools",
     path: "/tools/text",
     icon: "📝",
   },
   {
-    key: "color",
-    labelKey: "Color Tools",
+    key: "colorTools",
     path: "/tools/color",
     icon: "🎨",
   },
   {
-    key: "developer",
-    labelKey: "Developer Tools",
+    key: "developerTools",
     path: "/tools/developer",
     icon: "💻",
   },
   {
-    key: "finance",
-    labelKey: "Finance Tools",
+    key: "financeTools",
     path: "/tools/finance",
     icon: "💸",
   },
   {
-    key: "utility",
-    labelKey: "Utility Tools",
+    key: "utilityTools",
     path: "/tools/utility",
     icon: "🛠️",
   },
@@ -51,10 +46,12 @@ export default function Categories() {
             className="flex items-center gap-4 p-6 bg-white rounded-lg shadow hover:shadow-lg transition border border-gray-100 hover:border-primary"
           >
             <span className="text-3xl">{cat.icon}</span>
-            <span className="text-lg font-semibold text-black">{cat.labelKey}</span>
+            <span className="text-lg font-semibold text-black">
+              {t(cat.key)}
+            </span>
           </Link>
         ))}
       </div>
     </div>
-  )
+  );
 }

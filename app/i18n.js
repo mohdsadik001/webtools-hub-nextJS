@@ -7,6 +7,7 @@ import commonEn from "../locales/en/common.json";
 import navbarEn from "../locales/en/navbar.json";
 import toolsEn from "../locales/en/tools.json";
 import heroEn from "../locales/en/hero.json";
+import postEn from "../locales/en/posts.json";
 
 import commonHi from "../locales/hi/common.json";
 import navbarHi from "../locales/hi/navbar.json";
@@ -30,7 +31,7 @@ i18n
     fallbackLng: "en",
     debug: process.env.NODE_ENV === "development",
     resources: {
-      en: { common: commonEn, navbar: navbarEn, tools: toolsEn, hero: heroEn },
+      en: { common: commonEn, navbar: navbarEn, tools: toolsEn, hero: heroEn, posts : postEn },
       hi: { common: commonHi, navbar: navbarHi, tools: toolsHi, hero: heroHi },
       ur: { common: commonUr, navbar: navbarUr, tools: toolsUr, hero: heroUr },
       fr: { common: commonFr, navbar: navbarFr, tools: toolsFr, hero: heroFr },

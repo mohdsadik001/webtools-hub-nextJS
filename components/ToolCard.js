@@ -1,5 +1,5 @@
 "use client";
-import { useAppContext } from "./Context/AppContext";
+import { useAppContext } from "../app/Context/AppContext";
 import { useTranslation } from "react-i18next";
 
 const ToolCard = ({ tool }) => {
@@ -22,9 +22,9 @@ const ToolCard = ({ tool }) => {
           {tool.image}
         </div>
         <div className="flex justify-between h-full flex-col">
-          <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-primary-dull transition-colors">
+          <p className="font-semibold text-gray-900 mb-2 group-hover:text-primary-dull transition-colors">
             {t(`${tool.slug}.name`)}
-          </h3>
+          </p>
           <p className="text-gray-600 text-sm mb-3">
             {t(`${tool.slug}.description`)}
           </p>
