@@ -1,13 +1,15 @@
 "use client";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ColorPickerPage() {
   const [color, setColor] = useState("#3498db");
+  const { t } = useTranslation("common");
 
   return (
     <div className="max-w-md mx-auto py-10 px-4">
       <h1 className="text-2xl font-bold text-center mb-6 text-primary">
-        🎨 Color Picker
+        {t("colorPicker")}
       </h1>
       <div className="flex flex-col items-center gap-6">
         <input
@@ -21,11 +23,11 @@ export default function ColorPickerPage() {
           <button
             onClick={() => {
               navigator.clipboard.writeText(color);
-              alert("Copied!");
+              alert(t("copied"));
             }}
             className="px-4 py-2 bg-primary text-white rounded hover:bg-primary-dull transition"
           >
-            Copy Color
+            {t("copyColor")}
           </button>
         </div>
         <div

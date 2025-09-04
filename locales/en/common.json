@@ -172,7 +172,14 @@
   "exportPngBtn": "Export PNG",
   "exportFailedAlert": "Failed to export image.",
 
-  "colorPicker": "Color Picker",
+
+  
+  "colorPicker": "🎨 Color Picker",
+  "copied": "Copied!",
+  "copyColor": "Copy Color",
+
+
+
 
   "unitConverterTitle": "Unit Converter",
   "lengthConverter": "Length Converter",
