@@ -25,21 +25,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex items-center justify-between px-6 md:px-12 lg:px-24 xl:px-32 py-4 border-b border-gray-300 relative transition-all h-[8vh]"
+      className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 relative transition-all h-[8vh]"
       role="navigation"
       aria-label={t("common.navigation")}
     >
       {/* Website Logo */}
       <button
         onClick={() => router.push("/")}
-        className="text-2xl md:text-3xl font-semibold cursor-pointer text-black focus:outline-none focus:ring-2 focus:ring-primary rounded"
+        className="text-2xl sm:text-3xl font-semibold cursor-pointer text-black focus:outline-none focus:ring-2 focus:ring-primary rounded"
         aria-label={t("common.goHome")}
       >
         <span className="text-primary font-bold">WebTools</span> Hub
       </button>
 
       {/* Desktop Nav Links */}
-      <div className="hidden lg:flex items-center md:gap-4 lg:gap-8 text-black">
+      <div className="hidden sm:flex items-center gap-8 text-black">
         {navItems.map((item) => (
           <Link
             key={item.id}
@@ -51,9 +51,9 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* Desktop Search and Language Selector */}
+      {/* Desktop Right Side: Search + Language Selector */}
       <div className="hidden lg:flex items-center gap-4">
-        <div className="flex items-center text-sm gap-2 border border-gray-300 px-4 rounded-full md:w-20 lg:w-80">
+        <div className="flex items-center text-sm gap-2 border border-gray-300 px-4 rounded-full w-80">
           <input
             onChange={(e) => setSearchQuery(e.target.value)}
             className="py-2 w-full bg-transparent outline-none placeholder-gray-500"
@@ -69,7 +69,7 @@ const Navbar = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="lg:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+        className="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
         aria-controls="mobile-menu"
         aria-expanded={menuOpen}
         aria-label={menuOpen ? t("common.closeMenu") : t("common.openMenu")}
@@ -81,7 +81,7 @@ const Navbar = () => {
       {menuOpen && (
         <div
           id="mobile-menu"
-          className="absolute top-[8vh] left-0 w-full bg-white shadow-md border-t border-gray-200 flex flex-col items-start px-6 py-4 space-y-4 lg:hidden z-50 "
+          className="absolute top-[8vh] left-0 w-full bg-white shadow-md border-t border-gray-200 flex flex-col items-start px-6 py-4 space-y-4 sm:hidden z-50 "
           role="menu"
           aria-label={t("common.navigation")}
         >

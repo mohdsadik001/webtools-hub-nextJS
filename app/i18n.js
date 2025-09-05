@@ -3,25 +3,25 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-// *Importing English Translation
+// Importing English Translation
 import commonEn from "../locales/en/common.json";
 import navbarEn from "../locales/en/navbar.json";
 import toolsEn from "../locales/en/tools.json";
 import heroEn from "../locales/en/hero.json";
 
-// *Importing Hindi Translation
+// Importing Hindi Translation
 import commonHi from "../locales/hi/common.json";
 import navbarHi from "../locales/hi/navbar.json";
 import toolsHi from "../locales/hi/tools.json";
 import heroHi from "../locales/hi/hero.json";
 
-// *Importing Urdu Translation
+// Importing Urdu Translation
 import commonUr from "../locales/ur/common.json";
 import navbarUr from "../locales/ur/navbar.json";
 import toolsUr from "../locales/ur/tools.json";
 import heroUr from "../locales/ur/hero.json";
 
-// *Importing French Translation
+// Importing French Translation
 import commonFr from "../locales/fr/common.json";
 import navbarFr from "../locales/fr/navbar.json";
 import toolsFr from "../locales/fr/tools.json";
