@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import { AppContextProvider } from "@/app/Context/AppContext";
 import "./i18n";
-import ClientLayout from "@/components/ClientLayout";
+import I18nProvider from "./providers/I18nProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata = {
   title: "WebTools Hub - All Online Tools in One Box",
@@ -38,16 +37,19 @@ export const metadata = {
     follow: true,
   },
 };
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en"> 
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClientLayout>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <I18nProvider>
           <AppContextProvider>
             <Navbar />
             <main>{children}</main>
           </AppContextProvider>
-        </ClientLayout>
+        </I18nProvider>
       </body>
     </html>
   );

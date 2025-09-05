@@ -14,7 +14,7 @@ const LanguageSelector = () => {
       flag: "🇮🇳",
     },
     {
-      name: "french",
+      name: "Français",
       lang_code: "fr",
       flag: "🇫🇷",
     },
@@ -27,11 +27,6 @@ const LanguageSelector = () => {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    // ✅ optional: also update <html dir="ltr/rtl">
-    document.documentElement.lang = lang;
-    document.documentElement.dir = ["ur", "ar", "fa", "he"].includes(lang)
-      ? "rtl"
-      : "ltr";
   };
 
   return (
@@ -39,7 +34,7 @@ const LanguageSelector = () => {
       className="p-2 rounded border text-black"
       name="lang"
       id="lang"
-      value={i18n.language} // ✅ keeps current language selected
+      value={i18n.language} 
       onChange={(e) => changeLanguage(e.target.value)}
     >
       {languages.map((lang) => (
