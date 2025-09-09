@@ -2,7 +2,7 @@
 "use client"; 
 import { createContext, useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { allTools } from "@/assets/data.js"; // adjust path if needed
+import { allTools } from "@/assets/data.js"; 
 
 export const AppContext = createContext();
 

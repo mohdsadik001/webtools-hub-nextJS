@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Scissors, Brush, Clipboard } from "lucide-react"; // ✅ Next.js icons
+import { Scissors, Brush, Clipboard } from "lucide-react";
 
 const MultipleWhiteSpaceRemover = () => {
   const [text, setText] = useState("");
@@ -61,7 +61,7 @@ const MultipleWhiteSpaceRemover = () => {
         {/* Reset */}
         <button
           onClick={() => setText("")}
-          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded-lg text-base md:text-lg"
+          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded text-base md:text-lg"
           aria-label={t("resetBtn")}
         >
           <Brush className="w-5 h-5" aria-hidden="true" />
@@ -75,7 +75,7 @@ const MultipleWhiteSpaceRemover = () => {
               .writeText(text)
               .then(() => alert(t("copiedAlert")))
           }
-          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded-lg text-base md:text-lg"
+          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded text-base md:text-lg"
           aria-label={t("copyTextBtn")}
         >
           <Clipboard className="w-5 h-5" aria-hidden="true" />

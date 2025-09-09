@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { loremWordPool } from "../../../../assets/data";
 import { useTranslation } from "react-i18next";
+import { Scissors, Brush, Clipboard } from "lucide-react";
 
 const LoremIpsumGeneretor = () => {
   const [paragraphs, setParagraphs] = useState();
@@ -124,27 +125,33 @@ const LoremIpsumGeneretor = () => {
         ))}
       </div>
 
-      {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row items-stretch sm:items-center mt-4 gap-3 sm:gap-5 w-full">
+      {/* Reset & Copy buttons */}
+      <div className="flex flex-col sm:flex-row items-center mt-4 gap-3 w-full">
+        {/* Reset */}
         <button
-          onClick={() => setOutput([])}
-          className="flex gap-2 items-center justify-center cursor-pointer w-full sm:w-1/2 px-6 py-2 bg-primary hover:bg-primary-dull transition text-white rounded text-base sm:text-lg"
+          onClick={() => setText("")}
+          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded text-base md:text-lg"
+          aria-label={t("resetBtn")}
         >
-          <i className="ri-brush-2-line"></i>
+          <Brush className="w-5 h-5" aria-hidden="true" />
           {t("resetBtn")}
         </button>
+
+        {/* Copy */}
         <button
           onClick={() =>
             navigator.clipboard
-              .writeText(output.join("\n"))
+              .writeText(text)
               .then(() => alert(t("copiedAlert")))
           }
-          className="flex gap-2 items-center justify-center cursor-pointer w-full sm:w-1/2 px-6 py-2 bg-primary hover:bg-primary-dull transition text-white rounded text-base sm:text-lg"
+          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded text-base md:text-lg"
+          aria-label={t("copyTextBtn")}
         >
-          <i className="ri-clipboard-line"></i>
+          <Clipboard className="w-5 h-5" aria-hidden="true" />
           {t("copyTextBtn")}
         </button>
       </div>
+
     </div>
   );
 };
