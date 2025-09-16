@@ -3,8 +3,8 @@ import { useAppContext } from "../app/Context/AppContext";
 import { useTranslation } from "react-i18next";
 
 const ToolCard = ({ tool }) => {
-  const { router } = useAppContext(); // router instance from context
-  const { t } = useTranslation("tools"); // namespace "tools"
+  const { router } = useAppContext(); 
+  const { t } = useTranslation("tools");
 
   const handleNavigation = () => {
     router.push(`/tools/${tool.category.toLowerCase()}/${tool.slug}`);

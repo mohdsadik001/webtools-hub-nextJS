@@ -300,10 +300,18 @@ export const allTools = [
     description: "Convert units like length, weight, and temperature.",
   },
   {
+    name: "Data Validation Tools",
+    slug: "data-validators",
+    category: "utility",
+    image: "✅",
+    description:
+      "Check if your email,phone,aadhar, pan card and pin code is valid and formatted.",
+  },
+  {
     name: "JSON Validator",
     slug: "json-validator",
     category: "Developer",
-    image: "✅",
+    image: "{ }",
     description: "Check if your JSON is valid and formatted.",
   },
   {
@@ -341,9 +349,7 @@ export const allTools = [
     image: "🎨",
     description: "Select and pick the color code.",
   },
-
 ];
-
 
 export const loremWordPool = `
 Lorem ipsum odor amet, consectetuer adipiscing elit. Nunc sem velit facilisi nam platea consectetur.
@@ -352,4 +358,6 @@ Sapien aptent tempus malesuada viverra commodo fringilla conubia leo lorem.
 Nostra fringilla taciti inceptos inceptos mattis integer ex auctor.
 Dolor neque adipiscing in metus potenti egestas odio pellentesque elementum.
 Aprimis donec platea diam augue. Auctor torquent tortor vel augue suscipit litora.
-`.split(/\s+/).filter(Boolean);
+`
+  .split(/\s+/)
+  .filter(Boolean);

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Copy, Trash2, Download } from "lucide-react"; // ✅ Next icons
+import { Copy, Trash2, Download } from "lucide-react"; 
 
 const Base64Encoder = () => {
   const [text, setText] = useState("");

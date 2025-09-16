@@ -1,9 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google';
+
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import { AppContextProvider } from "@/app/Context/AppContext";
-import "./i18n";
-import ClientLayout from "@/components/ClientLayout";
+import I18nProvider from "./providers/I18nProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,9 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const inter = Inter({ subsets: ['latin'] });
+
 
 
 export const metadata = {
@@ -38,16 +42,19 @@ export const metadata = {
     follow: true,
   },
 };
-export default function RootLayout({ children }) {
+export default function RootLayout({ children,params }) {
+  const {locale} = params
+
   return (
-    <html lang="en"> 
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClientLayout>
+    <html lang={locale}> 
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} antialiased`}
+        suppressHydrationWarning={true}>
+        <I18nProvider locale={locale}>
           <AppContextProvider>
             <Navbar />
             <main>{children}</main>
           </AppContextProvider>
-        </ClientLayout>
+        </I18nProvider>
       </body>
     </html>
   );

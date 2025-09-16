@@ -266,5 +266,14 @@
   "sendMessage": "Send Message ✉️",
   "sending": "Sending...",
   "messageSent": "Message sent successfully!",
-  "messageFailed": "Failed to send. Please try again."
+  "messageFailed": "Failed to send. Please try again.",
+
+  
+  "validatorTitle" : "Validator",
+  "emailValidator" : "Validate Email",
+  "phoneValidator" : "Validate Phone Number",
+  "aadharValidator" : "Validate Aadhar Number",
+  "panCardValidator" : "Validate Pan Card Number",
+  "pinCodeValidator" : "Validate Pin Code Number"
+
 }

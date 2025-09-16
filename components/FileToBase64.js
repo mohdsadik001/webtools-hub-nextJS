@@ -6,7 +6,7 @@ import {
   Copy,
   Trash2,
   Download,
-} from "lucide-react"; // ✅ lucide-react icons
+} from "lucide-react"; 
 
 const FileToBase64 = () => {
   const [file, setFile] = useState(null);

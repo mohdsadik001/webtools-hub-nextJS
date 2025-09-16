@@ -58,7 +58,6 @@ const CurrencyConverter = () => {
     }
   };
 
-  // ✅ Swap currencies
   const handleSwap = () => {
     setFromCurrency(toCurrency);
     setToCurrency(fromCurrency);
