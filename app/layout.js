@@ -1,16 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
-<<<<<<< HEAD
-import Navbar from "../components/Navbar";
-import { AppContextProvider } from "@/app/Context/AppContext";
-import I18nProvider from "./providers/I18nProvider";
-=======
 import Header from "../components/layout/Header";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 import Providers from "./providers";
->>>>>>> test
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,11 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-<<<<<<< HEAD
-=======
 const inter = Inter({ subsets: ["latin"] });
 
->>>>>>> test
 export const metadata = {
   title: "WebTools Hub - All Online Tools in One Box",
   description:
@@ -50,20 +41,6 @@ export const metadata = {
   },
 };
 
-<<<<<<< HEAD
-export default function RootLayout({ children }) {
-  return (
-    <html>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <I18nProvider>
-          <AppContextProvider>
-            <Navbar />
-            <main>{children}</main>
-          </AppContextProvider>
-        </I18nProvider>
-=======
 export default async function RootLayout({ children, params }) {
   const { locale } = params || {};
   
@@ -81,7 +58,6 @@ export default async function RootLayout({ children, params }) {
           <Header />
           <main>{children}</main>
         </Providers>
->>>>>>> test
       </body>
     </html>
   );

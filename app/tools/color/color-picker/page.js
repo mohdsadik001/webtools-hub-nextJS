@@ -1,4 +1,6 @@
 "use client";
+import Button from "@/components/ui/buttons/Button";
+import { Copy } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -20,15 +22,17 @@ export default function ColorPickerPage() {
         />
         <div className="flex flex-col items-center gap-2 ">
           <span className="text-lg font-mono">{color}</span>
-          <button
+          <Button
+          icon={Copy}
+          variant="primary"
             onClick={() => {
               navigator.clipboard.writeText(color);
               alert(t("copied"));
             }}
-            className="px-4 py-2 bg-primary text-white rounded hover:bg-primary-dull transition"
+
           >
             {t("copyColor")}
-          </button>
+          </Button>
         </div>
         <div
           className="w-full h-16 rounded shadow"

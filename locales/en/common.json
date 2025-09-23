@@ -270,8 +270,8 @@
   "messageSent": "Message sent successfully!",
   "messageFailed": "Failed to send. Please try again.",
 
-  "dataValidators":"Data Validators",
-  "validatorTitle" : "Validator",
+  "dataValidatorsTitle":"Data Validators",
+  "validatorTitle" : "Validators",
   "emailValidator" : "Validate Email",
   "phoneValidator" : "Validate Phone Number",
   "aadharValidator" : "Validate Aadhar Number",

@@ -114,7 +114,7 @@ const TimestampConverter = () => {
             variant="secondary"
             icon={Copy}
             ariaLabel={t("copyBtn")}
-            className="w-full sm:w-auto flex items-center justify-center bg-primary text-white px-4 py-2 rounded-lg font-semibold"
+      
           >
             {copied ? t("copiedAlert") : t("copyBtn")}
           </Button>
@@ -124,7 +124,7 @@ const TimestampConverter = () => {
             variant="secondary"
             icon={Download}
             ariaLabel={t("exportBtn")}
-            className="w-full sm:w-auto flex items-center justify-center bg-primary text-white px-4 py-2 rounded-lg font-semibold"
+            
           >
             {t("exportBtn")}
           </Button>

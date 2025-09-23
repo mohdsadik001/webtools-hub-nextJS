@@ -140,14 +140,14 @@ const TextDiffChecker = () => {
       {/* Diff result */}
       {diffResult.length > 0 && (
         <section
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-gray-50 border border-gray-300 p-4 rounded-lg max-h-[500px] overflow-auto"
+          className="grid grid-cols-1  md:grid-cols-2 gap-4 bg-gray-50 border border-gray-300 p-4 rounded-lg h-50 overflow-auto"
           aria-live="polite"
         >
           <div>
             <h3 className="font-semibold mb-2 text-center">
               {t("originalTextLabel")}
             </h3>
-            <div className="whitespace-pre-wrap border p-3 rounded bg-white text-sm font-mono h-full overflow-auto">
+            <div className="whitespace-pre-wrap border p-3 rounded bg-white text-sm font-mono h-[80%] overflow-auto">
               {diffResult.map((part, i) =>
                 part.removed ? (
                   <mark
@@ -167,7 +167,7 @@ const TextDiffChecker = () => {
             <h3 className="font-semibold mb-2 text-center">
               {t("modifiedTextLabel")}
             </h3>
-            <div className="whitespace-pre-wrap border p-3 rounded bg-white text-sm font-mono h-full overflow-auto">
+            <div className="whitespace-pre-wrap border p-3 rounded bg-white text-sm font-mono h-[80%]  overflow-auto">
               {diffResult.map((part, i) =>
                 part.added ? (
                   <mark

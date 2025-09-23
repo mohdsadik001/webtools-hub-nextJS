@@ -1,6 +1,7 @@
 "use client";
+import QrCodeGenerator from '@/components/tools/QRCodeGenerator';
 import React from 'react';
-import QrCodeGenerator from '@/components/tools/QrCodeGenerator';
+
 
 const QrCodeGeneratorPage = () => <QrCodeGenerator />;
 

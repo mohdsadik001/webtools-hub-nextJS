@@ -166,11 +166,6 @@ const MultipleWhiteSpaceRemover = () => {
       {/* Reset & Copy buttons */}
       <div className="flex flex-col sm:flex-row items-center mt-4 gap-3 w-full">
         <button
-<<<<<<< HEAD
-          onClick={() => setText("")}
-          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded text-base md:text-lg"
-          aria-label={t("resetBtn")}
-=======
           onClick={resetText}
           disabled={!hasText}
           className={`flex gap-3 items-center justify-center w-full px-6 py-3 rounded text-base md:text-lg min-h-[44px] touch-manipulation transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
@@ -180,22 +175,12 @@ const MultipleWhiteSpaceRemover = () => {
           }`}
           aria-label={t("resetBtnAriaLabel") || "Clear all text"}
           aria-disabled={!hasText}
->>>>>>> test
         >
           <Brush className="w-5 h-5" aria-hidden="true" />
           {t("resetBtn")}
         </button>
 
         <button
-<<<<<<< HEAD
-          onClick={() =>
-            navigator.clipboard
-              .writeText(text)
-              .then(() => alert(t("copiedAlert")))
-          }
-          className="flex gap-3 items-center justify-center cursor-pointer w-full px-6 py-3 bg-primary hover:bg-primary-dull transition text-white rounded text-base md:text-lg"
-          aria-label={t("copyTextBtn")}
-=======
           onClick={copyText}
           disabled={!hasText}
           className={`flex gap-3 items-center justify-center w-full px-6 py-3 rounded text-base md:text-lg min-h-[44px] touch-manipulation transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
@@ -205,7 +190,6 @@ const MultipleWhiteSpaceRemover = () => {
           }`}
           aria-label={t("copyTextBtnAriaLabel") || "Copy cleaned text to clipboard"}
           aria-disabled={!hasText}
->>>>>>> test
         >
           <Clipboard className="w-5 h-5" aria-hidden="true" />
           {t("copyTextBtn")}

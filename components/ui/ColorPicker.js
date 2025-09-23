@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './buttons/Button';
-import { X } from 'lucide-react';
+import { Copy, X } from 'lucide-react';
 
 const ColorPicker = ({ colors, updateColor, removeColor, addColor }) => {
   return (
@@ -15,9 +15,10 @@ const ColorPicker = ({ colors, updateColor, removeColor, addColor }) => {
             aria-label={`Color ${i + 1}`}
           />
           <Button
+          leftIcon={Copy}
             onClick={() => removeColor(i)}
             disabled={colors.length <= 2}
-            variant="outline"
+            variant="primary"
             size="md"
             aria-label="Remove Color"
         
@@ -28,8 +29,9 @@ const ColorPicker = ({ colors, updateColor, removeColor, addColor }) => {
       ))}
       <Button
         onClick={addColor}
+        
         disabled={colors.length >= 6}
-        variant="outline-primary"
+        variant="primary"
         size="md"
         aria-label="Add Color"
       >

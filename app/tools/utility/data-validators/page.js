@@ -1,9 +1,11 @@
 "use client";
-import AadharValidator from "@/components/validators/AadharValidator";
-import EmailValidator from "@/components/validators/EmailValidator";
-import PanCardValidator from "@/components/validators/PanCardValidator";
-import PhoneValidator from "@/components/validators/PhoneValidator";
-import PinCodeValidator from "@/components/validators/PinCodeValidator";
+
+
+import AadhaarValidator from "@/components/Validators/AadharValidator";
+import EmailValidator from "@/components/Validators/EmailValidator";
+import PanCardValidator from "@/components/Validators/PanCardValidator";
+import PhoneValidator from "@/components/Validators/PhoneValidator";
+import PinCodeValidator from "@/components/Validators/PinCodeValidator";
 
 import { Phone, MailIcon, IdCard, MapPinCheckInside } from "lucide-react";
 import { useState, useRef } from "react";
@@ -15,13 +17,13 @@ export default function Validators() {
   const tabs = [
     { key: "emailValidator", icon: <MailIcon className="w-4 h-4" />, component: <EmailValidator /> },
     { key: "phoneValidator", icon: <Phone className="w-4 h-4" />, component: <PhoneValidator /> },
-    { key: "aadharValidator", icon: <IdCard className="w-4 h-4" />, component: <AadharValidator /> },
+    { key: "aadharValidator", icon: <IdCard className="w-4 h-4" />, component: <AadhaarValidator /> },
     { key: "panCardValidator", icon: <IdCard className="w-4 h-4" />, component: <PanCardValidator /> },
     { key: "pinCodeValidator", icon: <MapPinCheckInside className="w-4 h-4" />, component: <PinCodeValidator /> },
   ];
 
   const [activeTab, setActiveTab] = useState(0);
-  const tabRefs = useRef([]); // store refs to tab buttons
+  const tabRefs = useRef([]); 
 
   const handleKeyDown = (e, index) => {
     let newIndex = index;
@@ -48,7 +50,7 @@ export default function Validators() {
         className="text-2xl md:text-3xl font-bold text-left text-primary mb-6"
         tabIndex={0}
       >
-        {t("validatorTitle")}
+        {t("dataValidatorsTitle")}
       </h1>
 
       {/* Tablist */}

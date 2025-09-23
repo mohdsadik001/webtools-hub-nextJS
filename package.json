@@ -29,14 +29,8 @@
     "react-select": "^5.10.2"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@eslint/js": "^9.35.0",
-    "@tailwindcss/postcss": "^4",
-    "eslint-plugin-react": "^7.37.5",
-    "tailwindcss": "^4"
-=======
     "@chromatic-com/storybook": "^4.1.1",
-    "@eslint/js": "^9.35.0",
     "@storybook/addon-a11y": "^9.1.7",
     "@storybook/addon-docs": "^9.1.7",
     "@storybook/addon-vitest": "^9.1.7",
@@ -54,6 +48,5 @@
     "storybook": "^9.1.7",
     "tailwindcss": "^4",
     "vitest": "^3.2.4"
->>>>>>> test
   }
 }

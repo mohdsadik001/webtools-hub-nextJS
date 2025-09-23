@@ -75,12 +75,12 @@ const GradientGenerator = () => {
             aria-label={t("cssCodeLabel")}
           />
           <div className="flex gap-3">
-            <Button onClick={copyCss} variant="primary" aria-label={t("copyCssBtn")}>
+            <Button onClick={copyCss} variant="primary" className='gap-3' aria-label={t("copyCssBtn")}>
               <Copy size={18} aria-hidden="true" />
               {t("copyCssBtn")}
             </Button>
-            <Button onClick={exportAsImage} variant="outline-primary" aria-label={t("exportPngBtn")}>
-              <Download size={18} aria-hidden="true" />
+            <Button variant="primary" onClick={exportAsImage} className='gap-3' aria-label={t("exportPngBtn")}>
+              <Download  size={18} aria-hidden="true" />
               {t("exportPngBtn")}
             </Button>
           </div>
