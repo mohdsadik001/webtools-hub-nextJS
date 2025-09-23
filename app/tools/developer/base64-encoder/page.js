@@ -1,12 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import Base64Encoder from "../../../../components/Base64Encoder";
-import Base64Decoder from "../../../../components/Base64Decoder";
-import FileToBase64 from "../../../../components/FileToBase64";
-import FileDecoder from "../../../../components/FileDecoder";
+import React, { useState, useRef } from "react";
+import Base64Encoder from "@/components/tools/Base64Encoder";
+import Base64Decoder from "@/components/tools/Base64Decoder";
+import FileToBase64 from "@/components/tools/FileToBase64";
+import FileDecoder from "@/components/tools/FileDecoder";
 import { useTranslation } from "react-i18next";
-
-// ✅ Import Lucide React Icons
 import { Lock, Unlock, FileDown, FileUp } from "lucide-react";
 
 const Base64Tabs = () => {
@@ -18,18 +16,39 @@ const Base64Tabs = () => {
   ];
 
   const [activeTab, setActiveTab] = useState(0);
+  const tabRefs = useRef([]);
   const { t } = useTranslation("common");
 
-  // ✅ Handle keyboard accessibility
+  // Keyboard navigation
   const handleKeyDown = (e, index) => {
-    if (e.key === "ArrowRight") setActiveTab((index + 1) % tabs.length);
-    if (e.key === "ArrowLeft") setActiveTab((index - 1 + tabs.length) % tabs.length);
+    let newIndex = index;
+
+    if (e.key === "ArrowRight") {
+      newIndex = (index + 1) % tabs.length;
+    } else if (e.key === "ArrowLeft") {
+      newIndex = (index - 1 + tabs.length) % tabs.length;
+    } else if (e.key === "Home") {
+      newIndex = 0;
+    } else if (e.key === "End") {
+      newIndex = tabs.length - 1;
+    } else {
+      return; // exit for non-navigation keys
+    }
+
+    e.preventDefault();
+    setActiveTab(newIndex);
+    tabRefs.current[newIndex]?.focus(); // Move keyboard focus
   };
 
   return (
-    <div className="mt-2 md:mt-8 px-4  md:px-25 py-4">
+    <div className="mt-2 md:mt-8 px-4 md:px-25 py-4">
       {/* Title */}
-      <h1 className="text-2xl md:text-3xl font-bold text-left text-primary mb-6" tabIndex={0}>{t("base64ToolkitTitle")}</h1> 
+      <h1
+        className="text-2xl md:text-3xl font-bold text-left text-primary mb-6"
+        tabIndex={0}
+      >
+        {t("base64ToolkitTitle")}
+      </h1>
 
       {/* Tabs */}
       <div
@@ -40,12 +59,16 @@ const Base64Tabs = () => {
         {tabs.map((tab, index) => (
           <button
             key={tab.key}
+            ref={(el) => (tabRefs.current[index] = el)} 
             role="tab"
             aria-selected={activeTab === index}
             aria-controls={`tab-panel-${index}`}
             id={`tab-${index}`}
             tabIndex={activeTab === index ? 0 : -1}
-            onClick={() => setActiveTab(index)}
+            onClick={() => {
+              setActiveTab(index);
+              tabRefs.current[index]?.focus();
+            }}
             onKeyDown={(e) => handleKeyDown(e, index)}
             className={`flex items-center gap-2 px-4 py-2 text-sm md:text-base border-b-2 transition focus:outline-none focus:ring-2 focus:ring-primary rounded-md ${
               activeTab === index

@@ -47,6 +47,10 @@
     "name": "URL Encoder/Decoder",
     "description": "Encode or decode URLs for web usage."
   },
+  "data-validators" : {
+    "name" : "Data Validators",
+    "description" : "Check if your email,phone,aadhar, pan card and pin code is valid and formatted."
+  },
   "timestamp-converter": {
     "name": "Timestamp Converter",
     "description": "Convert Unix timestamps to readable dates."

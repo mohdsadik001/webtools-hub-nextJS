@@ -47,6 +47,10 @@
     "name": "Encodeur/Décodeur d’URL",
     "description": "Encodez ou décodez des URL pour une utilisation sur le web."
   },
+  "data-validators": {
+    "name": "Validateurs de données",
+    "description": "Vérifiez si votre e-mail, téléphone, Aadhaar, carte PAN et code PIN sont valides et correctement formatés."
+  },
   "timestamp-converter": {
     "name": "Convertisseur d’horodatage",
     "description": "Convertissez des horodatages Unix en dates lisibles."

@@ -7,6 +7,8 @@
   "categories": "Tools Categories",
   "allToolsHead": "All Tools",
   "inputAreaLabel": "Input Text",
+  "noToolsFound" : "Tools not found",
+
 
   "textTools": "Text Tools",
   "colorTools": "Color Tools",
@@ -266,5 +268,15 @@
   "sendMessage": "Send Message ✉️",
   "sending": "Sending...",
   "messageSent": "Message sent successfully!",
-  "messageFailed": "Failed to send. Please try again."
+  "messageFailed": "Failed to send. Please try again.",
+
+  "dataValidators":"Data Validators",
+  "validatorTitle" : "Validator",
+  "emailValidator" : "Validate Email",
+  "phoneValidator" : "Validate Phone Number",
+  "aadharValidator" : "Validate Aadhar Number",
+  "panCardValidator" : "Validate Pan Card Number",
+  "pinCodeValidator" : "Validate Pin Code Number"
+
+
 }

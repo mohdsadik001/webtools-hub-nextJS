@@ -1,15 +1,17 @@
 "use client";
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { loremWordPool } from "../../../../assets/data";
 import { useTranslation } from "react-i18next";
 import { Scissors, Brush, Clipboard } from "lucide-react";
+=======
+import React from 'react';
+import LoremIpsumGenerator from '@/components/tools/LoremIpsumGenerator';
+>>>>>>> test
 
-const LoremIpsumGeneretor = () => {
-  const [paragraphs, setParagraphs] = useState();
-  const [avgSentences, setAvgSentences] = useState();
-  const [avgWords, setAvgWords] = useState();
-  const [output, setOutput] = useState([]);
+const LoremIpsumGeneratorPage = () => <LoremIpsumGenerator />;
 
+<<<<<<< HEAD
   const generateSentence = (avgWords) => {
     const length = Math.max(
       6,
@@ -157,3 +159,6 @@ const LoremIpsumGeneretor = () => {
 };
 
 export default LoremIpsumGeneretor;
+=======
+export default LoremIpsumGeneratorPage;
+>>>>>>> test
