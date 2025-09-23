@@ -1,43 +1,39 @@
 'use client';
-
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { useSession } from 'next-auth/react';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function ProtectedRoute({ children }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const { data: session, status } = useSession();
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
-    checkAuth();
-  }, []);
-
-  const checkAuth = async () => {
-    try {
-      const response = await fetch('/api/auth/verify-token');
-      if (response.ok) {
-        setIsAuthenticated(true);
-      } else {
-        router.push('/auth/signin');
-      }
-    } catch (error) {
-      router.push('/auth/signin');
-    } finally {
-      setLoading(false);
+    // Don't do anything while loading
+    if (status === 'loading') return;
+    
+    // If not authenticated, redirect to signin with callback
+    if (status === 'unauthenticated' || !session) {
+      const callbackUrl = encodeURIComponent(pathname);
+      router.push(`/auth/signin?callbackUrl=${callbackUrl}`);
+      return;
     }
-  };
+  }, [session, status, router, pathname]);
 
-  if (loading) {
+  // Show loading while checking authentication
+  if (status === 'loading') {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
       </div>
     );
   }
 
-  if (!isAuthenticated) {
+  // Don't render children if not authenticated
+  if (status === 'unauthenticated' || !session) {
     return null;
   }
 
+  // Render children if authenticated
   return children;
 }

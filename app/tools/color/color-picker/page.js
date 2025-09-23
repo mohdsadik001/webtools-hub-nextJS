@@ -7,7 +7,7 @@ export default function ColorPickerPage() {
   const { t } = useTranslation("common");
 
   return (
-    <div className="max-w-md mx-auto py-10 px-4">
+    <div className="max-w-md mx-auto py-10 shadow-lg px-4">
       <h1 className="text-2xl font-bold text-center mb-6 text-primary">
         {t("colorPicker")}
       </h1>
@@ -18,7 +18,7 @@ export default function ColorPickerPage() {
           onChange={e => setColor(e.target.value)}
           className="w-32 h-32 rounded shadow border"
         />
-        <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-2 ">
           <span className="text-lg font-mono">{color}</span>
           <button
             onClick={() => {

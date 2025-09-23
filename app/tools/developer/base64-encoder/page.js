@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useRef } from "react";
-import Base64Encoder from "@/components/Base64Encoder";
-import Base64Decoder from "@/components/Base64Decoder";
-import FileToBase64 from "@/components/FileToBase64";
-import FileDecoder from "@/components/FileDecoder";
+import Base64Encoder from "@/components/tools/Base64Encoder";
+import Base64Decoder from "@/components/tools/Base64Decoder";
+import FileToBase64 from "@/components/tools/FileToBase64";
+import FileDecoder from "@/components/tools/FileDecoder";
 import { useTranslation } from "react-i18next";
 import { Lock, Unlock, FileDown, FileUp } from "lucide-react";
 
@@ -16,10 +16,10 @@ const Base64Tabs = () => {
   ];
 
   const [activeTab, setActiveTab] = useState(0);
-  const tabRefs = useRef([]); // store references to tab buttons
+  const tabRefs = useRef([]);
   const { t } = useTranslation("common");
 
-  // Keyboard navigation with focus management
+  // Keyboard navigation
   const handleKeyDown = (e, index) => {
     let newIndex = index;
 
@@ -59,7 +59,7 @@ const Base64Tabs = () => {
         {tabs.map((tab, index) => (
           <button
             key={tab.key}
-            ref={(el) => (tabRefs.current[index] = el)} // save reference
+            ref={(el) => (tabRefs.current[index] = el)} 
             role="tab"
             aria-selected={activeTab === index}
             aria-controls={`tab-panel-${index}`}

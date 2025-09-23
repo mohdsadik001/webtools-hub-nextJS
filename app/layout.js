@@ -1,10 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { Inter } from 'next/font/google';
-
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import { AppContextProvider } from "@/app/Context/AppContext";
-import I18nProvider from "./providers/I18nProvider";
+import Header from "../components/layout/Header";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "./api/auth/[...nextauth]/route";
+import Providers from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,9 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const inter = Inter({ subsets: ['latin'] });
-
-
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "WebTools Hub - All Online Tools in One Box",
@@ -42,19 +40,24 @@ export const metadata = {
     follow: true,
   },
 };
-export default function RootLayout({ children,params }) {
-  const {locale} = params
+
+export default async function RootLayout({ children, params }) {
+  const { locale } = params || {};
+  
+
+  const session = await getServerSession(authOptions);
 
   return (
-    <html lang={locale}> 
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className} antialiased`}
-        suppressHydrationWarning={true}>
-        <I18nProvider locale={locale}>
-          <AppContextProvider>
-            <Navbar />
-            <main>{children}</main>
-          </AppContextProvider>
-        </I18nProvider>
+    <html lang={locale || 'en'}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${inter.className}`}
+        suppressHydrationWarning={true}
+      >
+
+        <Providers session={session} locale={locale}>
+          <Header />
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );

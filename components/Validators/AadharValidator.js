@@ -319,3 +319,208 @@ export default function AadhaarValidator ()  {
   );
 };
 
+
+
+// import React from 'react';
+// import { CheckCircle, XCircle, CreditCard, AlertCircle } from 'lucide-react';
+
+// import Input from '@/components/ui/Input';
+// import { useAadhaarValidator } from '@/hooks/useAadhaarValidator';
+
+// export default function AadhaarValidator() {
+//   const {
+//     aadhaarNumber,
+//     isValid,
+//     validationDetails,
+//     announcement,
+//     handleAadhaarChange
+//   } = useAadhaarValidator();
+
+//   const getValidationIcon = () => {
+//     if (isValid === null) return <CreditCard className="w-5 h-5 text-gray-400" />;
+//     if (isValid) return <CheckCircle className="w-5 h-5 text-green-500" />;
+//     return <XCircle className="w-5 h-5 text-red-500" />;
+//   };
+
+//   const getInputBorderColor = () => {
+//     if (isValid === null) return 'border-gray-300 focus:border-indigo-500 focus:ring-indigo-500';
+//     if (isValid) return 'border-green-500 focus:border-green-500 focus:ring-green-500';
+//     return 'border-red-500 focus:border-red-500 focus:ring-red-500';
+//   };
+
+//   return (
+//     <div className="rounded bg-gradient-to-br from-orange-50 to-green-100 p-2 sm:p-4 md:p-6 lg:p-8">
+//       {/* Screen reader announcements */}
+//       <div aria-live="polite" aria-atomic="true" className="sr-only">
+//         {announcement}
+//       </div>
+      
+//       <div className="max-w-6xl mx-auto">
+//         <header className="text-center mb-6 sm:mb-8">
+//           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2 flex items-center justify-center gap-2">
+//             <CreditCard className="w-6 h-6 sm:w-8 sm:h-8 text-orange-600" aria-hidden="true" />
+//             Aadhaar Number Validator
+//           </h1>
+//           <p className="text-sm sm:text-base text-gray-600 px-4">
+//             Validate Aadhaar numbers using official UIDAI algorithms with privacy protection
+//           </p>
+//           <div className="mt-4 flex justify-center">
+//             <div className="bg-orange-100 border border-orange-200 rounded-lg p-2 text-xs sm:text-sm text-orange-800">
+//               🇮🇳 Follows official UIDAI validation standards
+//             </div>
+//           </div>
+//         </header>
+
+//         <main>
+//           <section 
+//             className="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6"
+//             role="main"
+//             aria-labelledby="validator-heading"
+//           >
+//             <h2 id="validator-heading" className="sr-only">Aadhaar Number Validation Form</h2>
+
+//             {/* Aadhaar Number Input */}
+//             <div className="mb-6">
+//               <label 
+//                 htmlFor="aadhaar" 
+//                 className="block text-sm sm:text-base font-medium text-gray-700 mb-2"
+//               >
+//                 <CreditCard className="w-4 h-4 inline mr-1" aria-hidden="true" />
+//                 Enter Aadhaar Number
+//               </label>
+//               <div className="relative">
+//                 <Input
+//                   id="aadhaar"
+//                   value={aadhaarNumber}
+//                   onChange={handleAadhaarChange}
+//                   placeholder='1234 5678 9012'
+//                   aria-invalid={isValid === false ? 'true' : 'false'}
+//                   className={`w-full px-3 sm:px-4 py-3 pr-12 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-1 transition-colors text-sm sm:text-base font-mono ${getInputBorderColor()}`}
+                  
+//                 />
+//                 <div 
+//                   className="absolute right-3 top-1/2 transform -translate-y-1/2"
+//                   aria-hidden="true"
+//                 >
+//                   {getValidationIcon()}
+//                 </div>
+//               </div>
+              
+//               <p id="aadhaar-description" className="sr-only">
+//                 Enter a 12-digit Aadhaar number for validation using official UIDAI algorithms
+//               </p>
+              
+//               {aadhaarNumber && (
+//                 <div id="validation-status" className="mt-2">
+//                   {isValid === true && (
+//                     <p className="text-green-600 text-sm flex items-center">
+//                       <CheckCircle className="w-4 h-4 mr-1 flex-shrink-0" aria-hidden="true" />
+//                       <span>Valid Aadhaar number!</span>
+//                     </p>
+//                   )}
+//                   {isValid === false && (
+//                     <p className="text-red-600 text-sm flex items-center">
+//                       <XCircle className="w-4 h-4 mr-1 flex-shrink-0" aria-hidden="true" />
+//                       <span>Invalid Aadhaar number</span>
+//                     </p>
+//                   )}
+//                 </div>
+//               )}
+//             </div>
+
+//             {/* Validation Details */}
+//             {aadhaarNumber && (
+//               <section 
+//                 className="border-t pt-6"
+//                 aria-labelledby="validation-details-heading"
+//               >
+//                 <h3 
+//                   id="validation-details-heading" 
+//                   className="text-base sm:text-lg font-semibold text-gray-800 mb-4"
+//                 >
+//                   Validation Details
+//                 </h3>
+//                 <div 
+//                   id="aadhaar-details"
+//                   className="grid grid-cols-1 lg:grid-cols-2 gap-3"
+//                   role="list"
+//                   aria-label="Aadhaar validation criteria"
+//                 >
+//                   {[
+//                     { key: 'hasCorrectLength', label: 'Exactly 12 digits' },
+//                     { key: 'containsOnlyDigits', label: 'Contains only numeric digits' },
+//                     { key: 'doesNotStartWithZeroOrOne', label: 'Does not start with 0 or 1' },
+//                     { key: 'hasValidFormat', label: 'Follows valid format pattern' },
+//                     { key: 'passesChecksumValidation', label: 'Passes Verhoeff checksum algorithm' }
+//                   ].map(({ key, label }) => (
+//                     <div 
+//                       key={key} 
+//                       className="flex items-start sm:items-center p-3 rounded-lg bg-gray-50"
+//                       role="listitem"
+//                     >
+//                       <div className="flex-shrink-0 mt-0.5 sm:mt-0">
+//                         {validationDetails[key] ? (
+//                           <CheckCircle 
+//                             className="w-4 h-4 text-green-500 mr-2" 
+//                             aria-label="Valid"
+//                           />
+//                         ) : (
+//                           <XCircle 
+//                             className="w-4 h-4 text-red-500 mr-2" 
+//                             aria-label="Invalid"
+//                           />
+//                         )}
+//                       </div>
+//                       <span 
+//                         className={`text-sm sm:text-base ${validationDetails[key] ? 'text-green-700' : 'text-red-700'}`}
+//                       >
+//                         {label}
+//                       </span>
+//                     </div>
+//                   ))}
+//                 </div>
+//               </section>
+//             )}
+//           </section>
+
+//           {/* Information Section */}
+//           <section 
+//             className="bg-white rounded-xl shadow-lg p-4 sm:p-6"
+//             aria-labelledby="info-heading"
+//           >
+//             <h3 
+//               id="info-heading" 
+//               className="text-base sm:text-lg font-semibold text-gray-800 mb-4 flex items-center"
+//             >
+//               <AlertCircle 
+//                 className="w-5 h-5 mr-2 text-orange-600 flex-shrink-0" 
+//                 aria-hidden="true" 
+//               />
+//               Aadhaar Validation Information
+//             </h3>
+            
+//             <div className="space-y-4">
+//               <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+//                 <h4 className="font-medium text-orange-800 mb-2">🔒 Privacy & Security</h4>
+//                 <ul className="text-sm text-orange-700 space-y-1 pl-4">
+//                   <li>• All validation is performed locally in your browser</li>
+//                   <li>• No Aadhaar numbers are sent to external servers</li>
+//                 </ul>
+//               </div>
+
+//               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+//                 <h4 className="font-medium text-blue-800 mb-2">🔍 Validation Rules</h4>
+//                 <ul className="text-sm text-blue-700 space-y-1 pl-4">
+//                   <li>• Must be exactly 12 digits long</li>
+//                   <li>• Cannot start with 0 or 1 (as per UIDAI guidelines)</li>
+//                   <li>• Must pass the Verhoeff checksum algorithm</li>
+//                   <li>• Uses the same validation as official UIDAI systems</li>
+//                 </ul>
+//               </div>
+//             </div>
+//           </section>
+//         </main>
+//       </div>
+//     </div>
+//   );
+// }

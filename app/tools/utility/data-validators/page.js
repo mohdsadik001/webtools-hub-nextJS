@@ -1,9 +1,9 @@
 "use client";
-import AadharValidator from "@/components/Validators/AadharValidator";
-import EmailValidator from "@/components/Validators/EmailValidator";
-import PanCardValidator from "@/components/Validators/PanCardValidator";
-import PhoneValidator from "@/components/Validators/PhoneValidator";
-import PinCodeValidator from "@/components/Validators/PinCodeValidator";
+import AadharValidator from "@/components/validators/AadharValidator";
+import EmailValidator from "@/components/validators/EmailValidator";
+import PanCardValidator from "@/components/validators/PanCardValidator";
+import PhoneValidator from "@/components/validators/PhoneValidator";
+import PinCodeValidator from "@/components/validators/PinCodeValidator";
 
 import { Phone, MailIcon, IdCard, MapPinCheckInside } from "lucide-react";
 import { useState, useRef } from "react";
